@@ -1,0 +1,2970 @@
+{
+  "resolve": [
+    {
+      "id": "spatial/willow/perch",
+      "definition": {
+        "mode": "tracking",
+        "dimensions": 1,
+        "parameters": {},
+        "capture": {
+          "kind": "rectangle"
+        },
+        "hookBonus": 0
+      },
+      "loadout": {
+        "fish": {
+          "strength": 1,
+          "fishSpeed": 0.34,
+          "surge": 1.8,
+          "rest": 1.2,
+          "fatigue": 0.1,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "insect",
+          "pondWeight": 1
+        },
+        "rod": {
+          "windowSize": 0.28,
+          "reelRate": 0.08,
+          "lineCapacity": 1,
+          "tackleAcceleration": 3.2,
+          "tackleDamping": 3.8,
+          "tackleSpeed": 0.9
+        },
+        "bait": {
+          "attraction": 1.15,
+          "biteBonus": 0.15,
+          "affinity": {
+            "insect": 1.8,
+            "grain": 0.7,
+            "flash": 0.8
+          }
+        }
+      },
+      "seed": 42,
+      "expected": {
+        "version": 1,
+        "config": {
+          "mode": "tracking",
+          "dimensions": 1,
+          "parameters": {
+            "strength": 1,
+            "surge": 1.8,
+            "rest": 1.2,
+            "fatigue": 0.1,
+            "reelRate": 0.08,
+            "escapeRate": 0.08,
+            "baseTension": 0.3,
+            "response": 0.8,
+            "recovery": 0.2,
+            "warning": 0.5,
+            "biteWindow": 1.25,
+            "jitter": 0.15,
+            "fishSpeed": 0.34,
+            "windowSize": 0.28,
+            "lineCapacity": 1,
+            "tackleAcceleration": 3.2,
+            "tackleDamping": 3.8,
+            "tackleSpeed": 0.9,
+            "waitMin": 0.7246376811594204,
+            "waitMax": 1.4492753623188408,
+            "targetCenter": 0.5,
+            "targetSpread": 1,
+            "restWander": 0.16
+          },
+          "capture": {
+            "kind": "rectangle"
+          }
+        },
+        "seed": 42,
+        "notes": []
+      }
+    },
+    {
+      "id": "spatial/willow/loach",
+      "definition": {
+        "mode": "tracking",
+        "dimensions": 1,
+        "parameters": {},
+        "capture": {
+          "kind": "rectangle"
+        },
+        "hookBonus": 0
+      },
+      "loadout": {
+        "fish": {
+          "strength": 0.85,
+          "fishSpeed": 0.3,
+          "surge": 1.1,
+          "rest": 1.2,
+          "fatigue": 0.12,
+          "recovery": 0.24,
+          "biteWindow": 0.7,
+          "targetCenter": 0.28,
+          "targetSpread": 0.55,
+          "restWander": 0.1,
+          "preference": "insect",
+          "pondWeight": 1
+        },
+        "rod": {
+          "windowSize": 0.28,
+          "reelRate": 0.08,
+          "lineCapacity": 1,
+          "tackleAcceleration": 3.2,
+          "tackleDamping": 3.8,
+          "tackleSpeed": 0.9
+        },
+        "bait": {
+          "attraction": 1,
+          "biteBonus": 0.25,
+          "affinity": {
+            "insect": 0.8,
+            "grain": 2.5,
+            "flash": 0.5
+          }
+        }
+      },
+      "seed": 42,
+      "expected": {
+        "version": 1,
+        "config": {
+          "mode": "tracking",
+          "dimensions": 1,
+          "parameters": {
+            "strength": 0.85,
+            "surge": 1.1,
+            "rest": 1.2,
+            "fatigue": 0.12,
+            "reelRate": 0.08,
+            "escapeRate": 0.08,
+            "baseTension": 0.3,
+            "response": 0.8,
+            "recovery": 0.24,
+            "warning": 0.5,
+            "biteWindow": 0.95,
+            "jitter": 0.15,
+            "fishSpeed": 0.3,
+            "windowSize": 0.28,
+            "lineCapacity": 1,
+            "tackleAcceleration": 3.2,
+            "tackleDamping": 3.8,
+            "tackleSpeed": 0.9,
+            "waitMin": 1.875,
+            "waitMax": 3.75,
+            "targetCenter": 0.28,
+            "targetSpread": 0.55,
+            "restWander": 0.1
+          },
+          "capture": {
+            "kind": "rectangle"
+          }
+        },
+        "seed": 42,
+        "notes": []
+      }
+    },
+    {
+      "id": "spatial/swift/perch",
+      "definition": {
+        "mode": "tracking",
+        "dimensions": 1,
+        "parameters": {},
+        "capture": {
+          "kind": "rectangle"
+        },
+        "hookBonus": 0
+      },
+      "loadout": {
+        "fish": {
+          "strength": 1,
+          "fishSpeed": 0.34,
+          "surge": 1.8,
+          "rest": 1.2,
+          "fatigue": 0.1,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "insect",
+          "pondWeight": 1
+        },
+        "rod": {
+          "windowSize": 0.23,
+          "reelRate": 0.095,
+          "lineCapacity": 1,
+          "tackleAcceleration": 4.4,
+          "tackleDamping": 4.6,
+          "tackleSpeed": 1
+        },
+        "bait": {
+          "attraction": 1.15,
+          "biteBonus": 0.15,
+          "affinity": {
+            "insect": 1.8,
+            "grain": 0.7,
+            "flash": 0.8
+          }
+        }
+      },
+      "seed": 42,
+      "expected": {
+        "version": 1,
+        "config": {
+          "mode": "tracking",
+          "dimensions": 1,
+          "parameters": {
+            "strength": 1,
+            "surge": 1.8,
+            "rest": 1.2,
+            "fatigue": 0.1,
+            "reelRate": 0.095,
+            "escapeRate": 0.08,
+            "baseTension": 0.3,
+            "response": 0.8,
+            "recovery": 0.2,
+            "warning": 0.5,
+            "biteWindow": 1.25,
+            "jitter": 0.15,
+            "fishSpeed": 0.34,
+            "windowSize": 0.23,
+            "lineCapacity": 1,
+            "tackleAcceleration": 4.4,
+            "tackleDamping": 4.6,
+            "tackleSpeed": 1,
+            "waitMin": 0.7246376811594204,
+            "waitMax": 1.4492753623188408,
+            "targetCenter": 0.5,
+            "targetSpread": 1,
+            "restWander": 0.16
+          },
+          "capture": {
+            "kind": "rectangle"
+          }
+        },
+        "seed": 42,
+        "notes": []
+      }
+    },
+    {
+      "id": "spatial/swift/loach",
+      "definition": {
+        "mode": "tracking",
+        "dimensions": 1,
+        "parameters": {},
+        "capture": {
+          "kind": "rectangle"
+        },
+        "hookBonus": 0
+      },
+      "loadout": {
+        "fish": {
+          "strength": 0.85,
+          "fishSpeed": 0.3,
+          "surge": 1.1,
+          "rest": 1.2,
+          "fatigue": 0.12,
+          "recovery": 0.24,
+          "biteWindow": 0.7,
+          "targetCenter": 0.28,
+          "targetSpread": 0.55,
+          "restWander": 0.1,
+          "preference": "insect",
+          "pondWeight": 1
+        },
+        "rod": {
+          "windowSize": 0.23,
+          "reelRate": 0.095,
+          "lineCapacity": 1,
+          "tackleAcceleration": 4.4,
+          "tackleDamping": 4.6,
+          "tackleSpeed": 1
+        },
+        "bait": {
+          "attraction": 1,
+          "biteBonus": 0.25,
+          "affinity": {
+            "insect": 0.8,
+            "grain": 2.5,
+            "flash": 0.5
+          }
+        }
+      },
+      "seed": 42,
+      "expected": {
+        "version": 1,
+        "config": {
+          "mode": "tracking",
+          "dimensions": 1,
+          "parameters": {
+            "strength": 0.85,
+            "surge": 1.1,
+            "rest": 1.2,
+            "fatigue": 0.12,
+            "reelRate": 0.095,
+            "escapeRate": 0.08,
+            "baseTension": 0.3,
+            "response": 0.8,
+            "recovery": 0.24,
+            "warning": 0.5,
+            "biteWindow": 0.95,
+            "jitter": 0.15,
+            "fishSpeed": 0.3,
+            "windowSize": 0.23,
+            "lineCapacity": 1,
+            "tackleAcceleration": 4.4,
+            "tackleDamping": 4.6,
+            "tackleSpeed": 1,
+            "waitMin": 1.875,
+            "waitMax": 3.75,
+            "targetCenter": 0.28,
+            "targetSpread": 0.55,
+            "restWander": 0.1
+          },
+          "capture": {
+            "kind": "rectangle"
+          }
+        },
+        "seed": 42,
+        "notes": []
+      }
+    },
+    {
+      "id": "spatial/sturdy/perch",
+      "definition": {
+        "mode": "tracking",
+        "dimensions": 1,
+        "parameters": {},
+        "capture": {
+          "kind": "rectangle"
+        },
+        "hookBonus": 0
+      },
+      "loadout": {
+        "fish": {
+          "strength": 1,
+          "fishSpeed": 0.34,
+          "surge": 1.8,
+          "rest": 1.2,
+          "fatigue": 0.1,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "insect",
+          "pondWeight": 1
+        },
+        "rod": {
+          "windowSize": 0.35,
+          "reelRate": 0.065,
+          "lineCapacity": 1.35,
+          "tackleAcceleration": 2.6,
+          "tackleDamping": 4,
+          "tackleSpeed": 0.75
+        },
+        "bait": {
+          "attraction": 1.15,
+          "biteBonus": 0.15,
+          "affinity": {
+            "insect": 1.8,
+            "grain": 0.7,
+            "flash": 0.8
+          }
+        }
+      },
+      "seed": 42,
+      "expected": {
+        "version": 1,
+        "config": {
+          "mode": "tracking",
+          "dimensions": 1,
+          "parameters": {
+            "strength": 1,
+            "surge": 1.8,
+            "rest": 1.2,
+            "fatigue": 0.1,
+            "reelRate": 0.065,
+            "escapeRate": 0.08,
+            "baseTension": 0.3,
+            "response": 0.8,
+            "recovery": 0.2,
+            "warning": 0.5,
+            "biteWindow": 1.25,
+            "jitter": 0.15,
+            "fishSpeed": 0.34,
+            "windowSize": 0.35,
+            "lineCapacity": 1.35,
+            "tackleAcceleration": 2.6,
+            "tackleDamping": 4,
+            "tackleSpeed": 0.75,
+            "waitMin": 0.7246376811594204,
+            "waitMax": 1.4492753623188408,
+            "targetCenter": 0.5,
+            "targetSpread": 1,
+            "restWander": 0.16
+          },
+          "capture": {
+            "kind": "rectangle"
+          }
+        },
+        "seed": 42,
+        "notes": []
+      }
+    },
+    {
+      "id": "spatial/sturdy/loach",
+      "definition": {
+        "mode": "tracking",
+        "dimensions": 1,
+        "parameters": {},
+        "capture": {
+          "kind": "rectangle"
+        },
+        "hookBonus": 0
+      },
+      "loadout": {
+        "fish": {
+          "strength": 0.85,
+          "fishSpeed": 0.3,
+          "surge": 1.1,
+          "rest": 1.2,
+          "fatigue": 0.12,
+          "recovery": 0.24,
+          "biteWindow": 0.7,
+          "targetCenter": 0.28,
+          "targetSpread": 0.55,
+          "restWander": 0.1,
+          "preference": "insect",
+          "pondWeight": 1
+        },
+        "rod": {
+          "windowSize": 0.35,
+          "reelRate": 0.065,
+          "lineCapacity": 1.35,
+          "tackleAcceleration": 2.6,
+          "tackleDamping": 4,
+          "tackleSpeed": 0.75
+        },
+        "bait": {
+          "attraction": 1,
+          "biteBonus": 0.25,
+          "affinity": {
+            "insect": 0.8,
+            "grain": 2.5,
+            "flash": 0.5
+          }
+        }
+      },
+      "seed": 42,
+      "expected": {
+        "version": 1,
+        "config": {
+          "mode": "tracking",
+          "dimensions": 1,
+          "parameters": {
+            "strength": 0.85,
+            "surge": 1.1,
+            "rest": 1.2,
+            "fatigue": 0.12,
+            "reelRate": 0.065,
+            "escapeRate": 0.08,
+            "baseTension": 0.3,
+            "response": 0.8,
+            "recovery": 0.24,
+            "warning": 0.5,
+            "biteWindow": 0.95,
+            "jitter": 0.15,
+            "fishSpeed": 0.3,
+            "windowSize": 0.35,
+            "lineCapacity": 1.35,
+            "tackleAcceleration": 2.6,
+            "tackleDamping": 4,
+            "tackleSpeed": 0.75,
+            "waitMin": 1.875,
+            "waitMax": 3.75,
+            "targetCenter": 0.28,
+            "targetSpread": 0.55,
+            "restWander": 0.1
+          },
+          "capture": {
+            "kind": "rectangle"
+          }
+        },
+        "seed": 42,
+        "notes": []
+      }
+    },
+    {
+      "id": "bite/willow/perch",
+      "definition": {
+        "mode": "hook",
+        "dimensions": 0,
+        "parameters": {},
+        "capture": {
+          "kind": "rectangle"
+        },
+        "hookBonus": 0.5
+      },
+      "loadout": {
+        "fish": {
+          "strength": 1,
+          "fishSpeed": 0.34,
+          "surge": 1.8,
+          "rest": 1.2,
+          "fatigue": 0.1,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "insect",
+          "pondWeight": 1
+        },
+        "rod": {
+          "windowSize": 0.28,
+          "reelRate": 0.08,
+          "lineCapacity": 1,
+          "tackleAcceleration": 3.2,
+          "tackleDamping": 3.8,
+          "tackleSpeed": 0.9
+        },
+        "bait": {
+          "attraction": 1.15,
+          "biteBonus": 0.15,
+          "affinity": {
+            "insect": 1.8,
+            "grain": 0.7,
+            "flash": 0.8
+          }
+        }
+      },
+      "seed": 42,
+      "expected": {
+        "version": 1,
+        "config": {
+          "mode": "hook",
+          "dimensions": 0,
+          "parameters": {
+            "strength": 1,
+            "surge": 1.8,
+            "rest": 1.2,
+            "fatigue": 0.1,
+            "reelRate": 0.08,
+            "escapeRate": 0.08,
+            "baseTension": 0.3,
+            "response": 0.8,
+            "recovery": 0.2,
+            "warning": 0.5,
+            "biteWindow": 1.75,
+            "jitter": 0.15,
+            "fishSpeed": 0.34,
+            "windowSize": 0.28,
+            "lineCapacity": 1,
+            "tackleAcceleration": 3.2,
+            "tackleDamping": 3.8,
+            "tackleSpeed": 0.9,
+            "waitMin": 0.7246376811594204,
+            "waitMax": 1.4492753623188408,
+            "targetCenter": 0.5,
+            "targetSpread": 1,
+            "restWander": 0.16
+          },
+          "capture": {
+            "kind": "rectangle"
+          }
+        },
+        "seed": 42,
+        "notes": []
+      }
+    },
+    {
+      "id": "bite/willow/loach",
+      "definition": {
+        "mode": "hook",
+        "dimensions": 0,
+        "parameters": {},
+        "capture": {
+          "kind": "rectangle"
+        },
+        "hookBonus": 0.5
+      },
+      "loadout": {
+        "fish": {
+          "strength": 0.85,
+          "fishSpeed": 0.3,
+          "surge": 1.1,
+          "rest": 1.2,
+          "fatigue": 0.12,
+          "recovery": 0.24,
+          "biteWindow": 0.7,
+          "targetCenter": 0.28,
+          "targetSpread": 0.55,
+          "restWander": 0.1,
+          "preference": "insect",
+          "pondWeight": 1
+        },
+        "rod": {
+          "windowSize": 0.28,
+          "reelRate": 0.08,
+          "lineCapacity": 1,
+          "tackleAcceleration": 3.2,
+          "tackleDamping": 3.8,
+          "tackleSpeed": 0.9
+        },
+        "bait": {
+          "attraction": 1,
+          "biteBonus": 0.25,
+          "affinity": {
+            "insect": 0.8,
+            "grain": 2.5,
+            "flash": 0.5
+          }
+        }
+      },
+      "seed": 42,
+      "expected": {
+        "version": 1,
+        "config": {
+          "mode": "hook",
+          "dimensions": 0,
+          "parameters": {
+            "strength": 1,
+            "surge": 1.8,
+            "rest": 1.2,
+            "fatigue": 0.1,
+            "reelRate": 0.08,
+            "escapeRate": 0.08,
+            "baseTension": 0.3,
+            "response": 0.8,
+            "recovery": 0.2,
+            "warning": 0.5,
+            "biteWindow": 1.45,
+            "jitter": 0.15,
+            "fishSpeed": 0.34,
+            "windowSize": 0.28,
+            "lineCapacity": 1,
+            "tackleAcceleration": 3.2,
+            "tackleDamping": 3.8,
+            "tackleSpeed": 0.9,
+            "waitMin": 1.875,
+            "waitMax": 3.75,
+            "targetCenter": 0.5,
+            "targetSpread": 1,
+            "restWander": 0.16
+          },
+          "capture": {
+            "kind": "rectangle"
+          }
+        },
+        "seed": 42,
+        "notes": []
+      }
+    },
+    {
+      "id": "bite/swift/perch",
+      "definition": {
+        "mode": "hook",
+        "dimensions": 0,
+        "parameters": {},
+        "capture": {
+          "kind": "rectangle"
+        },
+        "hookBonus": 0.5
+      },
+      "loadout": {
+        "fish": {
+          "strength": 1,
+          "fishSpeed": 0.34,
+          "surge": 1.8,
+          "rest": 1.2,
+          "fatigue": 0.1,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "insect",
+          "pondWeight": 1
+        },
+        "rod": {
+          "windowSize": 0.23,
+          "reelRate": 0.095,
+          "lineCapacity": 1,
+          "tackleAcceleration": 4.4,
+          "tackleDamping": 4.6,
+          "tackleSpeed": 1
+        },
+        "bait": {
+          "attraction": 1.15,
+          "biteBonus": 0.15,
+          "affinity": {
+            "insect": 1.8,
+            "grain": 0.7,
+            "flash": 0.8
+          }
+        }
+      },
+      "seed": 42,
+      "expected": {
+        "version": 1,
+        "config": {
+          "mode": "hook",
+          "dimensions": 0,
+          "parameters": {
+            "strength": 1,
+            "surge": 1.8,
+            "rest": 1.2,
+            "fatigue": 0.1,
+            "reelRate": 0.08,
+            "escapeRate": 0.08,
+            "baseTension": 0.3,
+            "response": 0.8,
+            "recovery": 0.2,
+            "warning": 0.5,
+            "biteWindow": 1.75,
+            "jitter": 0.15,
+            "fishSpeed": 0.34,
+            "windowSize": 0.28,
+            "lineCapacity": 1,
+            "tackleAcceleration": 3.2,
+            "tackleDamping": 3.8,
+            "tackleSpeed": 0.9,
+            "waitMin": 0.7246376811594204,
+            "waitMax": 1.4492753623188408,
+            "targetCenter": 0.5,
+            "targetSpread": 1,
+            "restWander": 0.16
+          },
+          "capture": {
+            "kind": "rectangle"
+          }
+        },
+        "seed": 42,
+        "notes": []
+      }
+    },
+    {
+      "id": "bite/swift/loach",
+      "definition": {
+        "mode": "hook",
+        "dimensions": 0,
+        "parameters": {},
+        "capture": {
+          "kind": "rectangle"
+        },
+        "hookBonus": 0.5
+      },
+      "loadout": {
+        "fish": {
+          "strength": 0.85,
+          "fishSpeed": 0.3,
+          "surge": 1.1,
+          "rest": 1.2,
+          "fatigue": 0.12,
+          "recovery": 0.24,
+          "biteWindow": 0.7,
+          "targetCenter": 0.28,
+          "targetSpread": 0.55,
+          "restWander": 0.1,
+          "preference": "insect",
+          "pondWeight": 1
+        },
+        "rod": {
+          "windowSize": 0.23,
+          "reelRate": 0.095,
+          "lineCapacity": 1,
+          "tackleAcceleration": 4.4,
+          "tackleDamping": 4.6,
+          "tackleSpeed": 1
+        },
+        "bait": {
+          "attraction": 1,
+          "biteBonus": 0.25,
+          "affinity": {
+            "insect": 0.8,
+            "grain": 2.5,
+            "flash": 0.5
+          }
+        }
+      },
+      "seed": 42,
+      "expected": {
+        "version": 1,
+        "config": {
+          "mode": "hook",
+          "dimensions": 0,
+          "parameters": {
+            "strength": 1,
+            "surge": 1.8,
+            "rest": 1.2,
+            "fatigue": 0.1,
+            "reelRate": 0.08,
+            "escapeRate": 0.08,
+            "baseTension": 0.3,
+            "response": 0.8,
+            "recovery": 0.2,
+            "warning": 0.5,
+            "biteWindow": 1.45,
+            "jitter": 0.15,
+            "fishSpeed": 0.34,
+            "windowSize": 0.28,
+            "lineCapacity": 1,
+            "tackleAcceleration": 3.2,
+            "tackleDamping": 3.8,
+            "tackleSpeed": 0.9,
+            "waitMin": 1.875,
+            "waitMax": 3.75,
+            "targetCenter": 0.5,
+            "targetSpread": 1,
+            "restWander": 0.16
+          },
+          "capture": {
+            "kind": "rectangle"
+          }
+        },
+        "seed": 42,
+        "notes": []
+      }
+    },
+    {
+      "id": "bite/sturdy/perch",
+      "definition": {
+        "mode": "hook",
+        "dimensions": 0,
+        "parameters": {},
+        "capture": {
+          "kind": "rectangle"
+        },
+        "hookBonus": 0.5
+      },
+      "loadout": {
+        "fish": {
+          "strength": 1,
+          "fishSpeed": 0.34,
+          "surge": 1.8,
+          "rest": 1.2,
+          "fatigue": 0.1,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "insect",
+          "pondWeight": 1
+        },
+        "rod": {
+          "windowSize": 0.35,
+          "reelRate": 0.065,
+          "lineCapacity": 1.35,
+          "tackleAcceleration": 2.6,
+          "tackleDamping": 4,
+          "tackleSpeed": 0.75
+        },
+        "bait": {
+          "attraction": 1.15,
+          "biteBonus": 0.15,
+          "affinity": {
+            "insect": 1.8,
+            "grain": 0.7,
+            "flash": 0.8
+          }
+        }
+      },
+      "seed": 42,
+      "expected": {
+        "version": 1,
+        "config": {
+          "mode": "hook",
+          "dimensions": 0,
+          "parameters": {
+            "strength": 1,
+            "surge": 1.8,
+            "rest": 1.2,
+            "fatigue": 0.1,
+            "reelRate": 0.08,
+            "escapeRate": 0.08,
+            "baseTension": 0.3,
+            "response": 0.8,
+            "recovery": 0.2,
+            "warning": 0.5,
+            "biteWindow": 1.75,
+            "jitter": 0.15,
+            "fishSpeed": 0.34,
+            "windowSize": 0.28,
+            "lineCapacity": 1,
+            "tackleAcceleration": 3.2,
+            "tackleDamping": 3.8,
+            "tackleSpeed": 0.9,
+            "waitMin": 0.7246376811594204,
+            "waitMax": 1.4492753623188408,
+            "targetCenter": 0.5,
+            "targetSpread": 1,
+            "restWander": 0.16
+          },
+          "capture": {
+            "kind": "rectangle"
+          }
+        },
+        "seed": 42,
+        "notes": []
+      }
+    },
+    {
+      "id": "bite/sturdy/loach",
+      "definition": {
+        "mode": "hook",
+        "dimensions": 0,
+        "parameters": {},
+        "capture": {
+          "kind": "rectangle"
+        },
+        "hookBonus": 0.5
+      },
+      "loadout": {
+        "fish": {
+          "strength": 0.85,
+          "fishSpeed": 0.3,
+          "surge": 1.1,
+          "rest": 1.2,
+          "fatigue": 0.12,
+          "recovery": 0.24,
+          "biteWindow": 0.7,
+          "targetCenter": 0.28,
+          "targetSpread": 0.55,
+          "restWander": 0.1,
+          "preference": "insect",
+          "pondWeight": 1
+        },
+        "rod": {
+          "windowSize": 0.35,
+          "reelRate": 0.065,
+          "lineCapacity": 1.35,
+          "tackleAcceleration": 2.6,
+          "tackleDamping": 4,
+          "tackleSpeed": 0.75
+        },
+        "bait": {
+          "attraction": 1,
+          "biteBonus": 0.25,
+          "affinity": {
+            "insect": 0.8,
+            "grain": 2.5,
+            "flash": 0.5
+          }
+        }
+      },
+      "seed": 42,
+      "expected": {
+        "version": 1,
+        "config": {
+          "mode": "hook",
+          "dimensions": 0,
+          "parameters": {
+            "strength": 1,
+            "surge": 1.8,
+            "rest": 1.2,
+            "fatigue": 0.1,
+            "reelRate": 0.08,
+            "escapeRate": 0.08,
+            "baseTension": 0.3,
+            "response": 0.8,
+            "recovery": 0.2,
+            "warning": 0.5,
+            "biteWindow": 1.45,
+            "jitter": 0.15,
+            "fishSpeed": 0.34,
+            "windowSize": 0.28,
+            "lineCapacity": 1,
+            "tackleAcceleration": 3.2,
+            "tackleDamping": 3.8,
+            "tackleSpeed": 0.9,
+            "waitMin": 1.875,
+            "waitMax": 3.75,
+            "targetCenter": 0.5,
+            "targetSpread": 1,
+            "restWander": 0.16
+          },
+          "capture": {
+            "kind": "rectangle"
+          }
+        },
+        "seed": 42,
+        "notes": []
+      }
+    },
+    {
+      "id": "pressure/willow/perch",
+      "definition": {
+        "mode": "pressure",
+        "dimensions": 0,
+        "parameters": {},
+        "capture": {
+          "kind": "rectangle"
+        },
+        "hookBonus": 0
+      },
+      "loadout": {
+        "fish": {
+          "strength": 1,
+          "fishSpeed": 0.34,
+          "surge": 1.8,
+          "rest": 1.2,
+          "fatigue": 0.1,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "insect",
+          "pondWeight": 1
+        },
+        "rod": {
+          "windowSize": 0.28,
+          "reelRate": 0.08,
+          "lineCapacity": 1,
+          "tackleAcceleration": 3.2,
+          "tackleDamping": 3.8,
+          "tackleSpeed": 0.9
+        },
+        "bait": {
+          "attraction": 1.15,
+          "biteBonus": 0.15,
+          "affinity": {
+            "insect": 1.8,
+            "grain": 0.7,
+            "flash": 0.8
+          }
+        }
+      },
+      "seed": 42,
+      "expected": {
+        "version": 1,
+        "config": {
+          "mode": "pressure",
+          "dimensions": 0,
+          "parameters": {
+            "strength": 1,
+            "surge": 1.8,
+            "rest": 1.2,
+            "fatigue": 0.1,
+            "reelRate": 0.08,
+            "escapeRate": 0.08,
+            "baseTension": 0.3,
+            "response": 0.8,
+            "recovery": 0.2,
+            "warning": 0.5,
+            "biteWindow": 1.25,
+            "jitter": 0.15,
+            "fishSpeed": 0.34,
+            "windowSize": 0.28,
+            "lineCapacity": 1,
+            "tackleAcceleration": 3.2,
+            "tackleDamping": 3.8,
+            "tackleSpeed": 0.9,
+            "waitMin": 0.7246376811594204,
+            "waitMax": 1.4492753623188408,
+            "targetCenter": 0.5,
+            "targetSpread": 1,
+            "restWander": 0.16
+          },
+          "capture": {
+            "kind": "rectangle"
+          }
+        },
+        "seed": 42,
+        "notes": []
+      }
+    },
+    {
+      "id": "pressure/willow/loach",
+      "definition": {
+        "mode": "pressure",
+        "dimensions": 0,
+        "parameters": {},
+        "capture": {
+          "kind": "rectangle"
+        },
+        "hookBonus": 0
+      },
+      "loadout": {
+        "fish": {
+          "strength": 0.85,
+          "fishSpeed": 0.3,
+          "surge": 1.1,
+          "rest": 1.2,
+          "fatigue": 0.12,
+          "recovery": 0.24,
+          "biteWindow": 0.7,
+          "targetCenter": 0.28,
+          "targetSpread": 0.55,
+          "restWander": 0.1,
+          "preference": "insect",
+          "pondWeight": 1
+        },
+        "rod": {
+          "windowSize": 0.28,
+          "reelRate": 0.08,
+          "lineCapacity": 1,
+          "tackleAcceleration": 3.2,
+          "tackleDamping": 3.8,
+          "tackleSpeed": 0.9
+        },
+        "bait": {
+          "attraction": 1,
+          "biteBonus": 0.25,
+          "affinity": {
+            "insect": 0.8,
+            "grain": 2.5,
+            "flash": 0.5
+          }
+        }
+      },
+      "seed": 42,
+      "expected": {
+        "version": 1,
+        "config": {
+          "mode": "pressure",
+          "dimensions": 0,
+          "parameters": {
+            "strength": 0.85,
+            "surge": 1.1,
+            "rest": 1.2,
+            "fatigue": 0.12,
+            "reelRate": 0.08,
+            "escapeRate": 0.08,
+            "baseTension": 0.3,
+            "response": 0.8,
+            "recovery": 0.24,
+            "warning": 0.5,
+            "biteWindow": 0.95,
+            "jitter": 0.15,
+            "fishSpeed": 0.34,
+            "windowSize": 0.28,
+            "lineCapacity": 1,
+            "tackleAcceleration": 3.2,
+            "tackleDamping": 3.8,
+            "tackleSpeed": 0.9,
+            "waitMin": 1.875,
+            "waitMax": 3.75,
+            "targetCenter": 0.5,
+            "targetSpread": 1,
+            "restWander": 0.16
+          },
+          "capture": {
+            "kind": "rectangle"
+          }
+        },
+        "seed": 42,
+        "notes": []
+      }
+    },
+    {
+      "id": "pressure/swift/perch",
+      "definition": {
+        "mode": "pressure",
+        "dimensions": 0,
+        "parameters": {},
+        "capture": {
+          "kind": "rectangle"
+        },
+        "hookBonus": 0
+      },
+      "loadout": {
+        "fish": {
+          "strength": 1,
+          "fishSpeed": 0.34,
+          "surge": 1.8,
+          "rest": 1.2,
+          "fatigue": 0.1,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "insect",
+          "pondWeight": 1
+        },
+        "rod": {
+          "windowSize": 0.23,
+          "reelRate": 0.095,
+          "lineCapacity": 1,
+          "tackleAcceleration": 4.4,
+          "tackleDamping": 4.6,
+          "tackleSpeed": 1
+        },
+        "bait": {
+          "attraction": 1.15,
+          "biteBonus": 0.15,
+          "affinity": {
+            "insect": 1.8,
+            "grain": 0.7,
+            "flash": 0.8
+          }
+        }
+      },
+      "seed": 42,
+      "expected": {
+        "version": 1,
+        "config": {
+          "mode": "pressure",
+          "dimensions": 0,
+          "parameters": {
+            "strength": 1,
+            "surge": 1.8,
+            "rest": 1.2,
+            "fatigue": 0.1,
+            "reelRate": 0.095,
+            "escapeRate": 0.08,
+            "baseTension": 0.3,
+            "response": 0.8,
+            "recovery": 0.2,
+            "warning": 0.5,
+            "biteWindow": 1.25,
+            "jitter": 0.15,
+            "fishSpeed": 0.34,
+            "windowSize": 0.28,
+            "lineCapacity": 1,
+            "tackleAcceleration": 3.2,
+            "tackleDamping": 3.8,
+            "tackleSpeed": 0.9,
+            "waitMin": 0.7246376811594204,
+            "waitMax": 1.4492753623188408,
+            "targetCenter": 0.5,
+            "targetSpread": 1,
+            "restWander": 0.16
+          },
+          "capture": {
+            "kind": "rectangle"
+          }
+        },
+        "seed": 42,
+        "notes": []
+      }
+    },
+    {
+      "id": "pressure/swift/loach",
+      "definition": {
+        "mode": "pressure",
+        "dimensions": 0,
+        "parameters": {},
+        "capture": {
+          "kind": "rectangle"
+        },
+        "hookBonus": 0
+      },
+      "loadout": {
+        "fish": {
+          "strength": 0.85,
+          "fishSpeed": 0.3,
+          "surge": 1.1,
+          "rest": 1.2,
+          "fatigue": 0.12,
+          "recovery": 0.24,
+          "biteWindow": 0.7,
+          "targetCenter": 0.28,
+          "targetSpread": 0.55,
+          "restWander": 0.1,
+          "preference": "insect",
+          "pondWeight": 1
+        },
+        "rod": {
+          "windowSize": 0.23,
+          "reelRate": 0.095,
+          "lineCapacity": 1,
+          "tackleAcceleration": 4.4,
+          "tackleDamping": 4.6,
+          "tackleSpeed": 1
+        },
+        "bait": {
+          "attraction": 1,
+          "biteBonus": 0.25,
+          "affinity": {
+            "insect": 0.8,
+            "grain": 2.5,
+            "flash": 0.5
+          }
+        }
+      },
+      "seed": 42,
+      "expected": {
+        "version": 1,
+        "config": {
+          "mode": "pressure",
+          "dimensions": 0,
+          "parameters": {
+            "strength": 0.85,
+            "surge": 1.1,
+            "rest": 1.2,
+            "fatigue": 0.12,
+            "reelRate": 0.095,
+            "escapeRate": 0.08,
+            "baseTension": 0.3,
+            "response": 0.8,
+            "recovery": 0.24,
+            "warning": 0.5,
+            "biteWindow": 0.95,
+            "jitter": 0.15,
+            "fishSpeed": 0.34,
+            "windowSize": 0.28,
+            "lineCapacity": 1,
+            "tackleAcceleration": 3.2,
+            "tackleDamping": 3.8,
+            "tackleSpeed": 0.9,
+            "waitMin": 1.875,
+            "waitMax": 3.75,
+            "targetCenter": 0.5,
+            "targetSpread": 1,
+            "restWander": 0.16
+          },
+          "capture": {
+            "kind": "rectangle"
+          }
+        },
+        "seed": 42,
+        "notes": []
+      }
+    },
+    {
+      "id": "pressure/sturdy/perch",
+      "definition": {
+        "mode": "pressure",
+        "dimensions": 0,
+        "parameters": {},
+        "capture": {
+          "kind": "rectangle"
+        },
+        "hookBonus": 0
+      },
+      "loadout": {
+        "fish": {
+          "strength": 1,
+          "fishSpeed": 0.34,
+          "surge": 1.8,
+          "rest": 1.2,
+          "fatigue": 0.1,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "insect",
+          "pondWeight": 1
+        },
+        "rod": {
+          "windowSize": 0.35,
+          "reelRate": 0.065,
+          "lineCapacity": 1.35,
+          "tackleAcceleration": 2.6,
+          "tackleDamping": 4,
+          "tackleSpeed": 0.75
+        },
+        "bait": {
+          "attraction": 1.15,
+          "biteBonus": 0.15,
+          "affinity": {
+            "insect": 1.8,
+            "grain": 0.7,
+            "flash": 0.8
+          }
+        }
+      },
+      "seed": 42,
+      "expected": {
+        "version": 1,
+        "config": {
+          "mode": "pressure",
+          "dimensions": 0,
+          "parameters": {
+            "strength": 1,
+            "surge": 1.8,
+            "rest": 1.2,
+            "fatigue": 0.1,
+            "reelRate": 0.065,
+            "escapeRate": 0.08,
+            "baseTension": 0.3,
+            "response": 0.8,
+            "recovery": 0.2,
+            "warning": 0.5,
+            "biteWindow": 1.25,
+            "jitter": 0.15,
+            "fishSpeed": 0.34,
+            "windowSize": 0.28,
+            "lineCapacity": 1.35,
+            "tackleAcceleration": 3.2,
+            "tackleDamping": 3.8,
+            "tackleSpeed": 0.9,
+            "waitMin": 0.7246376811594204,
+            "waitMax": 1.4492753623188408,
+            "targetCenter": 0.5,
+            "targetSpread": 1,
+            "restWander": 0.16
+          },
+          "capture": {
+            "kind": "rectangle"
+          }
+        },
+        "seed": 42,
+        "notes": []
+      }
+    },
+    {
+      "id": "pressure/sturdy/loach",
+      "definition": {
+        "mode": "pressure",
+        "dimensions": 0,
+        "parameters": {},
+        "capture": {
+          "kind": "rectangle"
+        },
+        "hookBonus": 0
+      },
+      "loadout": {
+        "fish": {
+          "strength": 0.85,
+          "fishSpeed": 0.3,
+          "surge": 1.1,
+          "rest": 1.2,
+          "fatigue": 0.12,
+          "recovery": 0.24,
+          "biteWindow": 0.7,
+          "targetCenter": 0.28,
+          "targetSpread": 0.55,
+          "restWander": 0.1,
+          "preference": "insect",
+          "pondWeight": 1
+        },
+        "rod": {
+          "windowSize": 0.35,
+          "reelRate": 0.065,
+          "lineCapacity": 1.35,
+          "tackleAcceleration": 2.6,
+          "tackleDamping": 4,
+          "tackleSpeed": 0.75
+        },
+        "bait": {
+          "attraction": 1,
+          "biteBonus": 0.25,
+          "affinity": {
+            "insect": 0.8,
+            "grain": 2.5,
+            "flash": 0.5
+          }
+        }
+      },
+      "seed": 42,
+      "expected": {
+        "version": 1,
+        "config": {
+          "mode": "pressure",
+          "dimensions": 0,
+          "parameters": {
+            "strength": 0.85,
+            "surge": 1.1,
+            "rest": 1.2,
+            "fatigue": 0.12,
+            "reelRate": 0.065,
+            "escapeRate": 0.08,
+            "baseTension": 0.3,
+            "response": 0.8,
+            "recovery": 0.24,
+            "warning": 0.5,
+            "biteWindow": 0.95,
+            "jitter": 0.15,
+            "fishSpeed": 0.34,
+            "windowSize": 0.28,
+            "lineCapacity": 1.35,
+            "tackleAcceleration": 3.2,
+            "tackleDamping": 3.8,
+            "tackleSpeed": 0.9,
+            "waitMin": 1.875,
+            "waitMax": 3.75,
+            "targetCenter": 0.5,
+            "targetSpread": 1,
+            "restWander": 0.16
+          },
+          "capture": {
+            "kind": "rectangle"
+          }
+        },
+        "seed": 42,
+        "notes": []
+      }
+    },
+    {
+      "id": "two-axis/willow/perch",
+      "definition": {
+        "mode": "tracking",
+        "dimensions": 2,
+        "parameters": {},
+        "capture": {
+          "kind": "rectangle"
+        },
+        "hookBonus": 0
+      },
+      "loadout": {
+        "fish": {
+          "strength": 1,
+          "fishSpeed": 0.34,
+          "surge": 1.8,
+          "rest": 1.2,
+          "fatigue": 0.1,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "insect",
+          "pondWeight": 1
+        },
+        "rod": {
+          "windowSize": 0.28,
+          "reelRate": 0.08,
+          "lineCapacity": 1,
+          "tackleAcceleration": 3.2,
+          "tackleDamping": 3.8,
+          "tackleSpeed": 0.9
+        },
+        "bait": {
+          "attraction": 1.15,
+          "biteBonus": 0.15,
+          "affinity": {
+            "insect": 1.8,
+            "grain": 0.7,
+            "flash": 0.8
+          }
+        }
+      },
+      "seed": 42,
+      "expected": {
+        "version": 1,
+        "config": {
+          "mode": "tracking",
+          "dimensions": 2,
+          "parameters": {
+            "strength": 1,
+            "surge": 1.8,
+            "rest": 1.2,
+            "fatigue": 0.1,
+            "reelRate": 0.08,
+            "escapeRate": 0.08,
+            "baseTension": 0.3,
+            "response": 0.8,
+            "recovery": 0.2,
+            "warning": 0.5,
+            "biteWindow": 1.25,
+            "jitter": 0.15,
+            "fishSpeed": 0.34,
+            "windowSize": 0.28,
+            "lineCapacity": 1,
+            "tackleAcceleration": 3.2,
+            "tackleDamping": 3.8,
+            "tackleSpeed": 0.9,
+            "waitMin": 0.7246376811594204,
+            "waitMax": 1.4492753623188408,
+            "targetCenter": 0.5,
+            "targetSpread": 1,
+            "restWander": 0.16
+          },
+          "capture": {
+            "kind": "rectangle"
+          }
+        },
+        "seed": 42,
+        "notes": []
+      }
+    },
+    {
+      "id": "two-axis/willow/loach",
+      "definition": {
+        "mode": "tracking",
+        "dimensions": 2,
+        "parameters": {},
+        "capture": {
+          "kind": "rectangle"
+        },
+        "hookBonus": 0
+      },
+      "loadout": {
+        "fish": {
+          "strength": 0.85,
+          "fishSpeed": 0.3,
+          "surge": 1.1,
+          "rest": 1.2,
+          "fatigue": 0.12,
+          "recovery": 0.24,
+          "biteWindow": 0.7,
+          "targetCenter": 0.28,
+          "targetSpread": 0.55,
+          "restWander": 0.1,
+          "preference": "insect",
+          "pondWeight": 1
+        },
+        "rod": {
+          "windowSize": 0.28,
+          "reelRate": 0.08,
+          "lineCapacity": 1,
+          "tackleAcceleration": 3.2,
+          "tackleDamping": 3.8,
+          "tackleSpeed": 0.9
+        },
+        "bait": {
+          "attraction": 1,
+          "biteBonus": 0.25,
+          "affinity": {
+            "insect": 0.8,
+            "grain": 2.5,
+            "flash": 0.5
+          }
+        }
+      },
+      "seed": 42,
+      "expected": {
+        "version": 1,
+        "config": {
+          "mode": "tracking",
+          "dimensions": 2,
+          "parameters": {
+            "strength": 0.85,
+            "surge": 1.1,
+            "rest": 1.2,
+            "fatigue": 0.12,
+            "reelRate": 0.08,
+            "escapeRate": 0.08,
+            "baseTension": 0.3,
+            "response": 0.8,
+            "recovery": 0.24,
+            "warning": 0.5,
+            "biteWindow": 0.95,
+            "jitter": 0.15,
+            "fishSpeed": 0.3,
+            "windowSize": 0.28,
+            "lineCapacity": 1,
+            "tackleAcceleration": 3.2,
+            "tackleDamping": 3.8,
+            "tackleSpeed": 0.9,
+            "waitMin": 1.875,
+            "waitMax": 3.75,
+            "targetCenter": 0.28,
+            "targetSpread": 0.55,
+            "restWander": 0.1
+          },
+          "capture": {
+            "kind": "rectangle"
+          }
+        },
+        "seed": 42,
+        "notes": []
+      }
+    },
+    {
+      "id": "two-axis/swift/perch",
+      "definition": {
+        "mode": "tracking",
+        "dimensions": 2,
+        "parameters": {},
+        "capture": {
+          "kind": "rectangle"
+        },
+        "hookBonus": 0
+      },
+      "loadout": {
+        "fish": {
+          "strength": 1,
+          "fishSpeed": 0.34,
+          "surge": 1.8,
+          "rest": 1.2,
+          "fatigue": 0.1,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "insect",
+          "pondWeight": 1
+        },
+        "rod": {
+          "windowSize": 0.23,
+          "reelRate": 0.095,
+          "lineCapacity": 1,
+          "tackleAcceleration": 4.4,
+          "tackleDamping": 4.6,
+          "tackleSpeed": 1
+        },
+        "bait": {
+          "attraction": 1.15,
+          "biteBonus": 0.15,
+          "affinity": {
+            "insect": 1.8,
+            "grain": 0.7,
+            "flash": 0.8
+          }
+        }
+      },
+      "seed": 42,
+      "expected": {
+        "version": 1,
+        "config": {
+          "mode": "tracking",
+          "dimensions": 2,
+          "parameters": {
+            "strength": 1,
+            "surge": 1.8,
+            "rest": 1.2,
+            "fatigue": 0.1,
+            "reelRate": 0.095,
+            "escapeRate": 0.08,
+            "baseTension": 0.3,
+            "response": 0.8,
+            "recovery": 0.2,
+            "warning": 0.5,
+            "biteWindow": 1.25,
+            "jitter": 0.15,
+            "fishSpeed": 0.34,
+            "windowSize": 0.23,
+            "lineCapacity": 1,
+            "tackleAcceleration": 4.4,
+            "tackleDamping": 4.6,
+            "tackleSpeed": 1,
+            "waitMin": 0.7246376811594204,
+            "waitMax": 1.4492753623188408,
+            "targetCenter": 0.5,
+            "targetSpread": 1,
+            "restWander": 0.16
+          },
+          "capture": {
+            "kind": "rectangle"
+          }
+        },
+        "seed": 42,
+        "notes": []
+      }
+    },
+    {
+      "id": "two-axis/swift/loach",
+      "definition": {
+        "mode": "tracking",
+        "dimensions": 2,
+        "parameters": {},
+        "capture": {
+          "kind": "rectangle"
+        },
+        "hookBonus": 0
+      },
+      "loadout": {
+        "fish": {
+          "strength": 0.85,
+          "fishSpeed": 0.3,
+          "surge": 1.1,
+          "rest": 1.2,
+          "fatigue": 0.12,
+          "recovery": 0.24,
+          "biteWindow": 0.7,
+          "targetCenter": 0.28,
+          "targetSpread": 0.55,
+          "restWander": 0.1,
+          "preference": "insect",
+          "pondWeight": 1
+        },
+        "rod": {
+          "windowSize": 0.23,
+          "reelRate": 0.095,
+          "lineCapacity": 1,
+          "tackleAcceleration": 4.4,
+          "tackleDamping": 4.6,
+          "tackleSpeed": 1
+        },
+        "bait": {
+          "attraction": 1,
+          "biteBonus": 0.25,
+          "affinity": {
+            "insect": 0.8,
+            "grain": 2.5,
+            "flash": 0.5
+          }
+        }
+      },
+      "seed": 42,
+      "expected": {
+        "version": 1,
+        "config": {
+          "mode": "tracking",
+          "dimensions": 2,
+          "parameters": {
+            "strength": 0.85,
+            "surge": 1.1,
+            "rest": 1.2,
+            "fatigue": 0.12,
+            "reelRate": 0.095,
+            "escapeRate": 0.08,
+            "baseTension": 0.3,
+            "response": 0.8,
+            "recovery": 0.24,
+            "warning": 0.5,
+            "biteWindow": 0.95,
+            "jitter": 0.15,
+            "fishSpeed": 0.3,
+            "windowSize": 0.23,
+            "lineCapacity": 1,
+            "tackleAcceleration": 4.4,
+            "tackleDamping": 4.6,
+            "tackleSpeed": 1,
+            "waitMin": 1.875,
+            "waitMax": 3.75,
+            "targetCenter": 0.28,
+            "targetSpread": 0.55,
+            "restWander": 0.1
+          },
+          "capture": {
+            "kind": "rectangle"
+          }
+        },
+        "seed": 42,
+        "notes": []
+      }
+    },
+    {
+      "id": "two-axis/sturdy/perch",
+      "definition": {
+        "mode": "tracking",
+        "dimensions": 2,
+        "parameters": {},
+        "capture": {
+          "kind": "rectangle"
+        },
+        "hookBonus": 0
+      },
+      "loadout": {
+        "fish": {
+          "strength": 1,
+          "fishSpeed": 0.34,
+          "surge": 1.8,
+          "rest": 1.2,
+          "fatigue": 0.1,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "insect",
+          "pondWeight": 1
+        },
+        "rod": {
+          "windowSize": 0.35,
+          "reelRate": 0.065,
+          "lineCapacity": 1.35,
+          "tackleAcceleration": 2.6,
+          "tackleDamping": 4,
+          "tackleSpeed": 0.75
+        },
+        "bait": {
+          "attraction": 1.15,
+          "biteBonus": 0.15,
+          "affinity": {
+            "insect": 1.8,
+            "grain": 0.7,
+            "flash": 0.8
+          }
+        }
+      },
+      "seed": 42,
+      "expected": {
+        "version": 1,
+        "config": {
+          "mode": "tracking",
+          "dimensions": 2,
+          "parameters": {
+            "strength": 1,
+            "surge": 1.8,
+            "rest": 1.2,
+            "fatigue": 0.1,
+            "reelRate": 0.065,
+            "escapeRate": 0.08,
+            "baseTension": 0.3,
+            "response": 0.8,
+            "recovery": 0.2,
+            "warning": 0.5,
+            "biteWindow": 1.25,
+            "jitter": 0.15,
+            "fishSpeed": 0.34,
+            "windowSize": 0.35,
+            "lineCapacity": 1.35,
+            "tackleAcceleration": 2.6,
+            "tackleDamping": 4,
+            "tackleSpeed": 0.75,
+            "waitMin": 0.7246376811594204,
+            "waitMax": 1.4492753623188408,
+            "targetCenter": 0.5,
+            "targetSpread": 1,
+            "restWander": 0.16
+          },
+          "capture": {
+            "kind": "rectangle"
+          }
+        },
+        "seed": 42,
+        "notes": []
+      }
+    },
+    {
+      "id": "two-axis/sturdy/loach",
+      "definition": {
+        "mode": "tracking",
+        "dimensions": 2,
+        "parameters": {},
+        "capture": {
+          "kind": "rectangle"
+        },
+        "hookBonus": 0
+      },
+      "loadout": {
+        "fish": {
+          "strength": 0.85,
+          "fishSpeed": 0.3,
+          "surge": 1.1,
+          "rest": 1.2,
+          "fatigue": 0.12,
+          "recovery": 0.24,
+          "biteWindow": 0.7,
+          "targetCenter": 0.28,
+          "targetSpread": 0.55,
+          "restWander": 0.1,
+          "preference": "insect",
+          "pondWeight": 1
+        },
+        "rod": {
+          "windowSize": 0.35,
+          "reelRate": 0.065,
+          "lineCapacity": 1.35,
+          "tackleAcceleration": 2.6,
+          "tackleDamping": 4,
+          "tackleSpeed": 0.75
+        },
+        "bait": {
+          "attraction": 1,
+          "biteBonus": 0.25,
+          "affinity": {
+            "insect": 0.8,
+            "grain": 2.5,
+            "flash": 0.5
+          }
+        }
+      },
+      "seed": 42,
+      "expected": {
+        "version": 1,
+        "config": {
+          "mode": "tracking",
+          "dimensions": 2,
+          "parameters": {
+            "strength": 0.85,
+            "surge": 1.1,
+            "rest": 1.2,
+            "fatigue": 0.12,
+            "reelRate": 0.065,
+            "escapeRate": 0.08,
+            "baseTension": 0.3,
+            "response": 0.8,
+            "recovery": 0.24,
+            "warning": 0.5,
+            "biteWindow": 0.95,
+            "jitter": 0.15,
+            "fishSpeed": 0.3,
+            "windowSize": 0.35,
+            "lineCapacity": 1.35,
+            "tackleAcceleration": 2.6,
+            "tackleDamping": 4,
+            "tackleSpeed": 0.75,
+            "waitMin": 1.875,
+            "waitMax": 3.75,
+            "targetCenter": 0.28,
+            "targetSpread": 0.55,
+            "restWander": 0.1
+          },
+          "capture": {
+            "kind": "rectangle"
+          }
+        },
+        "seed": 42,
+        "notes": []
+      }
+    }
+  ],
+  "select": [
+    {
+      "id": "bare/0",
+      "pool": [
+        {
+          "strength": 1,
+          "fishSpeed": 0.34,
+          "surge": 1.8,
+          "rest": 1.2,
+          "fatigue": 0.1,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "insect",
+          "pondWeight": 1
+        },
+        {
+          "strength": 0.7,
+          "fishSpeed": 0.45,
+          "surge": 0.9,
+          "rest": 0.8,
+          "fatigue": 0.18,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "flash",
+          "pondWeight": 1
+        },
+        {
+          "strength": 1.3,
+          "fishSpeed": 0.28,
+          "surge": 2.3,
+          "rest": 1.8,
+          "fatigue": 0.065,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "grain",
+          "pondWeight": 1
+        },
+        {
+          "strength": 0.85,
+          "fishSpeed": 0.3,
+          "surge": 1.1,
+          "rest": 1.2,
+          "fatigue": 0.12,
+          "recovery": 0.24,
+          "biteWindow": 0.7,
+          "targetCenter": 0.28,
+          "targetSpread": 0.55,
+          "restWander": 0.1,
+          "preference": "insect",
+          "pondWeight": 1
+        }
+      ],
+      "bait": {
+        "attraction": 1,
+        "biteBonus": 0,
+        "affinity": {
+          "insect": 1,
+          "grain": 1,
+          "flash": 1
+        }
+      },
+      "seed": 0,
+      "expected": {
+        "index": 0,
+        "seed": 1013904223,
+        "odds": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      }
+    },
+    {
+      "id": "bare/42",
+      "pool": [
+        {
+          "strength": 1,
+          "fishSpeed": 0.34,
+          "surge": 1.8,
+          "rest": 1.2,
+          "fatigue": 0.1,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "insect",
+          "pondWeight": 1
+        },
+        {
+          "strength": 0.7,
+          "fishSpeed": 0.45,
+          "surge": 0.9,
+          "rest": 0.8,
+          "fatigue": 0.18,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "flash",
+          "pondWeight": 1
+        },
+        {
+          "strength": 1.3,
+          "fishSpeed": 0.28,
+          "surge": 2.3,
+          "rest": 1.8,
+          "fatigue": 0.065,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "grain",
+          "pondWeight": 1
+        },
+        {
+          "strength": 0.85,
+          "fishSpeed": 0.3,
+          "surge": 1.1,
+          "rest": 1.2,
+          "fatigue": 0.12,
+          "recovery": 0.24,
+          "biteWindow": 0.7,
+          "targetCenter": 0.28,
+          "targetSpread": 0.55,
+          "restWander": 0.1,
+          "preference": "insect",
+          "pondWeight": 1
+        }
+      ],
+      "bait": {
+        "attraction": 1,
+        "biteBonus": 0,
+        "affinity": {
+          "insect": 1,
+          "grain": 1,
+          "flash": 1
+        }
+      },
+      "seed": 42,
+      "expected": {
+        "index": 1,
+        "seed": 1083814273,
+        "odds": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      }
+    },
+    {
+      "id": "bare/4294967295",
+      "pool": [
+        {
+          "strength": 1,
+          "fishSpeed": 0.34,
+          "surge": 1.8,
+          "rest": 1.2,
+          "fatigue": 0.1,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "insect",
+          "pondWeight": 1
+        },
+        {
+          "strength": 0.7,
+          "fishSpeed": 0.45,
+          "surge": 0.9,
+          "rest": 0.8,
+          "fatigue": 0.18,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "flash",
+          "pondWeight": 1
+        },
+        {
+          "strength": 1.3,
+          "fishSpeed": 0.28,
+          "surge": 2.3,
+          "rest": 1.8,
+          "fatigue": 0.065,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "grain",
+          "pondWeight": 1
+        },
+        {
+          "strength": 0.85,
+          "fishSpeed": 0.3,
+          "surge": 1.1,
+          "rest": 1.2,
+          "fatigue": 0.12,
+          "recovery": 0.24,
+          "biteWindow": 0.7,
+          "targetCenter": 0.28,
+          "targetSpread": 0.55,
+          "restWander": 0.1,
+          "preference": "insect",
+          "pondWeight": 1
+        }
+      ],
+      "bait": {
+        "attraction": 1,
+        "biteBonus": 0,
+        "affinity": {
+          "insect": 1,
+          "grain": 1,
+          "flash": 1
+        }
+      },
+      "seed": 4294967295,
+      "expected": {
+        "index": 0,
+        "seed": 1012239698,
+        "odds": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      }
+    },
+    {
+      "id": "worm/0",
+      "pool": [
+        {
+          "strength": 1,
+          "fishSpeed": 0.34,
+          "surge": 1.8,
+          "rest": 1.2,
+          "fatigue": 0.1,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "insect",
+          "pondWeight": 1
+        },
+        {
+          "strength": 0.7,
+          "fishSpeed": 0.45,
+          "surge": 0.9,
+          "rest": 0.8,
+          "fatigue": 0.18,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "flash",
+          "pondWeight": 1
+        },
+        {
+          "strength": 1.3,
+          "fishSpeed": 0.28,
+          "surge": 2.3,
+          "rest": 1.8,
+          "fatigue": 0.065,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "grain",
+          "pondWeight": 1
+        },
+        {
+          "strength": 0.85,
+          "fishSpeed": 0.3,
+          "surge": 1.1,
+          "rest": 1.2,
+          "fatigue": 0.12,
+          "recovery": 0.24,
+          "biteWindow": 0.7,
+          "targetCenter": 0.28,
+          "targetSpread": 0.55,
+          "restWander": 0.1,
+          "preference": "insect",
+          "pondWeight": 1
+        }
+      ],
+      "bait": {
+        "attraction": 1.15,
+        "biteBonus": 0.15,
+        "affinity": {
+          "insect": 1.8,
+          "grain": 0.7,
+          "flash": 0.8
+        }
+      },
+      "seed": 0,
+      "expected": {
+        "index": 0,
+        "seed": 1013904223,
+        "odds": [
+          0.35294117647058826,
+          0.15686274509803924,
+          0.13725490196078433,
+          0.35294117647058826
+        ]
+      }
+    },
+    {
+      "id": "worm/42",
+      "pool": [
+        {
+          "strength": 1,
+          "fishSpeed": 0.34,
+          "surge": 1.8,
+          "rest": 1.2,
+          "fatigue": 0.1,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "insect",
+          "pondWeight": 1
+        },
+        {
+          "strength": 0.7,
+          "fishSpeed": 0.45,
+          "surge": 0.9,
+          "rest": 0.8,
+          "fatigue": 0.18,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "flash",
+          "pondWeight": 1
+        },
+        {
+          "strength": 1.3,
+          "fishSpeed": 0.28,
+          "surge": 2.3,
+          "rest": 1.8,
+          "fatigue": 0.065,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "grain",
+          "pondWeight": 1
+        },
+        {
+          "strength": 0.85,
+          "fishSpeed": 0.3,
+          "surge": 1.1,
+          "rest": 1.2,
+          "fatigue": 0.12,
+          "recovery": 0.24,
+          "biteWindow": 0.7,
+          "targetCenter": 0.28,
+          "targetSpread": 0.55,
+          "restWander": 0.1,
+          "preference": "insect",
+          "pondWeight": 1
+        }
+      ],
+      "bait": {
+        "attraction": 1.15,
+        "biteBonus": 0.15,
+        "affinity": {
+          "insect": 1.8,
+          "grain": 0.7,
+          "flash": 0.8
+        }
+      },
+      "seed": 42,
+      "expected": {
+        "index": 0,
+        "seed": 1083814273,
+        "odds": [
+          0.35294117647058826,
+          0.15686274509803924,
+          0.13725490196078433,
+          0.35294117647058826
+        ]
+      }
+    },
+    {
+      "id": "worm/4294967295",
+      "pool": [
+        {
+          "strength": 1,
+          "fishSpeed": 0.34,
+          "surge": 1.8,
+          "rest": 1.2,
+          "fatigue": 0.1,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "insect",
+          "pondWeight": 1
+        },
+        {
+          "strength": 0.7,
+          "fishSpeed": 0.45,
+          "surge": 0.9,
+          "rest": 0.8,
+          "fatigue": 0.18,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "flash",
+          "pondWeight": 1
+        },
+        {
+          "strength": 1.3,
+          "fishSpeed": 0.28,
+          "surge": 2.3,
+          "rest": 1.8,
+          "fatigue": 0.065,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "grain",
+          "pondWeight": 1
+        },
+        {
+          "strength": 0.85,
+          "fishSpeed": 0.3,
+          "surge": 1.1,
+          "rest": 1.2,
+          "fatigue": 0.12,
+          "recovery": 0.24,
+          "biteWindow": 0.7,
+          "targetCenter": 0.28,
+          "targetSpread": 0.55,
+          "restWander": 0.1,
+          "preference": "insect",
+          "pondWeight": 1
+        }
+      ],
+      "bait": {
+        "attraction": 1.15,
+        "biteBonus": 0.15,
+        "affinity": {
+          "insect": 1.8,
+          "grain": 0.7,
+          "flash": 0.8
+        }
+      },
+      "seed": 4294967295,
+      "expected": {
+        "index": 0,
+        "seed": 1012239698,
+        "odds": [
+          0.35294117647058826,
+          0.15686274509803924,
+          0.13725490196078433,
+          0.35294117647058826
+        ]
+      }
+    },
+    {
+      "id": "dough/0",
+      "pool": [
+        {
+          "strength": 1,
+          "fishSpeed": 0.34,
+          "surge": 1.8,
+          "rest": 1.2,
+          "fatigue": 0.1,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "insect",
+          "pondWeight": 1
+        },
+        {
+          "strength": 0.7,
+          "fishSpeed": 0.45,
+          "surge": 0.9,
+          "rest": 0.8,
+          "fatigue": 0.18,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "flash",
+          "pondWeight": 1
+        },
+        {
+          "strength": 1.3,
+          "fishSpeed": 0.28,
+          "surge": 2.3,
+          "rest": 1.8,
+          "fatigue": 0.065,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "grain",
+          "pondWeight": 1
+        },
+        {
+          "strength": 0.85,
+          "fishSpeed": 0.3,
+          "surge": 1.1,
+          "rest": 1.2,
+          "fatigue": 0.12,
+          "recovery": 0.24,
+          "biteWindow": 0.7,
+          "targetCenter": 0.28,
+          "targetSpread": 0.55,
+          "restWander": 0.1,
+          "preference": "insect",
+          "pondWeight": 1
+        }
+      ],
+      "bait": {
+        "attraction": 1,
+        "biteBonus": 0.25,
+        "affinity": {
+          "insect": 0.8,
+          "grain": 2.5,
+          "flash": 0.5
+        }
+      },
+      "seed": 0,
+      "expected": {
+        "index": 1,
+        "seed": 1013904223,
+        "odds": [
+          0.1739130434782609,
+          0.10869565217391305,
+          0.5434782608695653,
+          0.1739130434782609
+        ]
+      }
+    },
+    {
+      "id": "dough/42",
+      "pool": [
+        {
+          "strength": 1,
+          "fishSpeed": 0.34,
+          "surge": 1.8,
+          "rest": 1.2,
+          "fatigue": 0.1,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "insect",
+          "pondWeight": 1
+        },
+        {
+          "strength": 0.7,
+          "fishSpeed": 0.45,
+          "surge": 0.9,
+          "rest": 0.8,
+          "fatigue": 0.18,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "flash",
+          "pondWeight": 1
+        },
+        {
+          "strength": 1.3,
+          "fishSpeed": 0.28,
+          "surge": 2.3,
+          "rest": 1.8,
+          "fatigue": 0.065,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "grain",
+          "pondWeight": 1
+        },
+        {
+          "strength": 0.85,
+          "fishSpeed": 0.3,
+          "surge": 1.1,
+          "rest": 1.2,
+          "fatigue": 0.12,
+          "recovery": 0.24,
+          "biteWindow": 0.7,
+          "targetCenter": 0.28,
+          "targetSpread": 0.55,
+          "restWander": 0.1,
+          "preference": "insect",
+          "pondWeight": 1
+        }
+      ],
+      "bait": {
+        "attraction": 1,
+        "biteBonus": 0.25,
+        "affinity": {
+          "insect": 0.8,
+          "grain": 2.5,
+          "flash": 0.5
+        }
+      },
+      "seed": 42,
+      "expected": {
+        "index": 1,
+        "seed": 1083814273,
+        "odds": [
+          0.1739130434782609,
+          0.10869565217391305,
+          0.5434782608695653,
+          0.1739130434782609
+        ]
+      }
+    },
+    {
+      "id": "dough/4294967295",
+      "pool": [
+        {
+          "strength": 1,
+          "fishSpeed": 0.34,
+          "surge": 1.8,
+          "rest": 1.2,
+          "fatigue": 0.1,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "insect",
+          "pondWeight": 1
+        },
+        {
+          "strength": 0.7,
+          "fishSpeed": 0.45,
+          "surge": 0.9,
+          "rest": 0.8,
+          "fatigue": 0.18,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "flash",
+          "pondWeight": 1
+        },
+        {
+          "strength": 1.3,
+          "fishSpeed": 0.28,
+          "surge": 2.3,
+          "rest": 1.8,
+          "fatigue": 0.065,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "grain",
+          "pondWeight": 1
+        },
+        {
+          "strength": 0.85,
+          "fishSpeed": 0.3,
+          "surge": 1.1,
+          "rest": 1.2,
+          "fatigue": 0.12,
+          "recovery": 0.24,
+          "biteWindow": 0.7,
+          "targetCenter": 0.28,
+          "targetSpread": 0.55,
+          "restWander": 0.1,
+          "preference": "insect",
+          "pondWeight": 1
+        }
+      ],
+      "bait": {
+        "attraction": 1,
+        "biteBonus": 0.25,
+        "affinity": {
+          "insect": 0.8,
+          "grain": 2.5,
+          "flash": 0.5
+        }
+      },
+      "seed": 4294967295,
+      "expected": {
+        "index": 1,
+        "seed": 1012239698,
+        "odds": [
+          0.1739130434782609,
+          0.10869565217391305,
+          0.5434782608695653,
+          0.1739130434782609
+        ]
+      }
+    },
+    {
+      "id": "spinner/0",
+      "pool": [
+        {
+          "strength": 1,
+          "fishSpeed": 0.34,
+          "surge": 1.8,
+          "rest": 1.2,
+          "fatigue": 0.1,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "insect",
+          "pondWeight": 1
+        },
+        {
+          "strength": 0.7,
+          "fishSpeed": 0.45,
+          "surge": 0.9,
+          "rest": 0.8,
+          "fatigue": 0.18,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "flash",
+          "pondWeight": 1
+        },
+        {
+          "strength": 1.3,
+          "fishSpeed": 0.28,
+          "surge": 2.3,
+          "rest": 1.8,
+          "fatigue": 0.065,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "grain",
+          "pondWeight": 1
+        },
+        {
+          "strength": 0.85,
+          "fishSpeed": 0.3,
+          "surge": 1.1,
+          "rest": 1.2,
+          "fatigue": 0.12,
+          "recovery": 0.24,
+          "biteWindow": 0.7,
+          "targetCenter": 0.28,
+          "targetSpread": 0.55,
+          "restWander": 0.1,
+          "preference": "insect",
+          "pondWeight": 1
+        }
+      ],
+      "bait": {
+        "attraction": 1.5,
+        "biteBonus": 0,
+        "affinity": {
+          "insect": 0.7,
+          "grain": 0.6,
+          "flash": 2.2
+        }
+      },
+      "seed": 0,
+      "expected": {
+        "index": 1,
+        "seed": 1013904223,
+        "odds": [
+          0.16666666666666666,
+          0.5238095238095238,
+          0.14285714285714285,
+          0.16666666666666666
+        ]
+      }
+    },
+    {
+      "id": "spinner/42",
+      "pool": [
+        {
+          "strength": 1,
+          "fishSpeed": 0.34,
+          "surge": 1.8,
+          "rest": 1.2,
+          "fatigue": 0.1,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "insect",
+          "pondWeight": 1
+        },
+        {
+          "strength": 0.7,
+          "fishSpeed": 0.45,
+          "surge": 0.9,
+          "rest": 0.8,
+          "fatigue": 0.18,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "flash",
+          "pondWeight": 1
+        },
+        {
+          "strength": 1.3,
+          "fishSpeed": 0.28,
+          "surge": 2.3,
+          "rest": 1.8,
+          "fatigue": 0.065,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "grain",
+          "pondWeight": 1
+        },
+        {
+          "strength": 0.85,
+          "fishSpeed": 0.3,
+          "surge": 1.1,
+          "rest": 1.2,
+          "fatigue": 0.12,
+          "recovery": 0.24,
+          "biteWindow": 0.7,
+          "targetCenter": 0.28,
+          "targetSpread": 0.55,
+          "restWander": 0.1,
+          "preference": "insect",
+          "pondWeight": 1
+        }
+      ],
+      "bait": {
+        "attraction": 1.5,
+        "biteBonus": 0,
+        "affinity": {
+          "insect": 0.7,
+          "grain": 0.6,
+          "flash": 2.2
+        }
+      },
+      "seed": 42,
+      "expected": {
+        "index": 1,
+        "seed": 1083814273,
+        "odds": [
+          0.16666666666666666,
+          0.5238095238095238,
+          0.14285714285714285,
+          0.16666666666666666
+        ]
+      }
+    },
+    {
+      "id": "spinner/4294967295",
+      "pool": [
+        {
+          "strength": 1,
+          "fishSpeed": 0.34,
+          "surge": 1.8,
+          "rest": 1.2,
+          "fatigue": 0.1,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "insect",
+          "pondWeight": 1
+        },
+        {
+          "strength": 0.7,
+          "fishSpeed": 0.45,
+          "surge": 0.9,
+          "rest": 0.8,
+          "fatigue": 0.18,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "flash",
+          "pondWeight": 1
+        },
+        {
+          "strength": 1.3,
+          "fishSpeed": 0.28,
+          "surge": 2.3,
+          "rest": 1.8,
+          "fatigue": 0.065,
+          "recovery": 0.2,
+          "biteWindow": 1.1,
+          "targetCenter": 0.5,
+          "targetSpread": 1,
+          "restWander": 0.16,
+          "preference": "grain",
+          "pondWeight": 1
+        },
+        {
+          "strength": 0.85,
+          "fishSpeed": 0.3,
+          "surge": 1.1,
+          "rest": 1.2,
+          "fatigue": 0.12,
+          "recovery": 0.24,
+          "biteWindow": 0.7,
+          "targetCenter": 0.28,
+          "targetSpread": 0.55,
+          "restWander": 0.1,
+          "preference": "insect",
+          "pondWeight": 1
+        }
+      ],
+      "bait": {
+        "attraction": 1.5,
+        "biteBonus": 0,
+        "affinity": {
+          "insect": 0.7,
+          "grain": 0.6,
+          "flash": 2.2
+        }
+      },
+      "seed": 4294967295,
+      "expected": {
+        "index": 1,
+        "seed": 1012239698,
+        "odds": [
+          0.16666666666666666,
+          0.5238095238095238,
+          0.14285714285714285,
+          0.16666666666666666
+        ]
+      }
+    }
+  ]
+}

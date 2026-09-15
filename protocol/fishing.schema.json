@@ -1,0 +1,1095 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Fishing Protocol draft 0.2 \u2014 schema 2",
+  "description": "Named wire types. Semantic checks in PROTOCOL.md are also required. Resolve a specific $defs entry; the root does not validate an arbitrary message.",
+  "$defs": {
+    "Parameters": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "strength": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "default": 1
+        },
+        "surge": {
+          "type": "number",
+          "minimum": 0.016666666666666666,
+          "maximum": 600,
+          "default": 1.8
+        },
+        "rest": {
+          "type": "number",
+          "minimum": 0.016666666666666666,
+          "maximum": 600,
+          "default": 1.2
+        },
+        "fatigue": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 60,
+          "default": 0.1
+        },
+        "reelRate": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 60,
+          "default": 0.08
+        },
+        "escapeRate": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 60,
+          "default": 0.08
+        },
+        "baseTension": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "default": 0.3
+        },
+        "response": {
+          "type": "number",
+          "minimum": 0.016666666666666666,
+          "maximum": 600,
+          "default": 0.8
+        },
+        "recovery": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 60,
+          "default": 0.2
+        },
+        "warning": {
+          "type": "number",
+          "minimum": 0.016666666666666666,
+          "maximum": 600,
+          "default": 0.5
+        },
+        "biteWindow": {
+          "type": "number",
+          "minimum": 0.016666666666666666,
+          "maximum": 600,
+          "default": 1.1
+        },
+        "jitter": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 0.15
+        },
+        "fishSpeed": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 60,
+          "default": 0.34
+        },
+        "windowSize": {
+          "type": "number",
+          "minimum": 0.001,
+          "maximum": 1,
+          "default": 0.28
+        },
+        "lineCapacity": {
+          "type": "number",
+          "minimum": 0.01,
+          "maximum": 100,
+          "default": 1
+        },
+        "tackleAcceleration": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 3600,
+          "default": 3.2
+        },
+        "tackleDamping": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 60,
+          "default": 3.8
+        },
+        "tackleSpeed": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 60,
+          "default": 0.9
+        },
+        "waitMin": {
+          "type": "number",
+          "minimum": 0.016666666666666666,
+          "maximum": 600,
+          "default": 1.5
+        },
+        "waitMax": {
+          "type": "number",
+          "minimum": 0.016666666666666666,
+          "maximum": 600,
+          "default": 3
+        },
+        "targetCenter": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 0.5
+        },
+        "targetSpread": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 1
+        },
+        "restWander": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 0.16
+        }
+      },
+      "required": []
+    },
+    "Point": {
+      "type": "array",
+      "items": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "Capture": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "const": "rectangle"
+            }
+          },
+          "required": [
+            "kind"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "const": "polygon"
+            },
+            "rings": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 2,
+              "items": {
+                "type": "array",
+                "minItems": 3,
+                "maxItems": 48,
+                "items": {
+                  "$ref": "#/$defs/Point"
+                }
+              }
+            }
+          },
+          "required": [
+            "kind",
+            "rings"
+          ]
+        }
+      ]
+    },
+    "Config": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "mode": {
+          "enum": [
+            "hook",
+            "pressure",
+            "tracking"
+          ]
+        },
+        "dimensions": {
+          "enum": [
+            0,
+            1,
+            2
+          ]
+        },
+        "parameters": {
+          "$ref": "#/$defs/Parameters"
+        },
+        "capture": {
+          "$ref": "#/$defs/Capture"
+        },
+        "pattern": {
+          "type": "array",
+          "maxItems": 16,
+          "items": {
+            "$ref": "#/$defs/Segment"
+          },
+          "default": []
+        },
+        "nibbles": {
+          "$ref": "#/$defs/Nibbles",
+          "default": {
+            "count": 0,
+            "duration": 0.25,
+            "gap": 0.6
+          }
+        },
+        "maxTicks": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 36000,
+          "default": 3600
+        }
+      },
+      "required": [
+        "mode",
+        "dimensions",
+        "capture"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "mode": {
+                "const": "tracking"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "dimensions": {
+                "enum": [
+                  1,
+                  2
+                ]
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "dimensions": {
+                "const": 0
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "dimensions": {
+                "enum": [
+                  0,
+                  1
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "capture": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "kind": {
+                    "const": "rectangle"
+                  }
+                },
+                "required": [
+                  "kind"
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    "Definition": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "mode": {
+          "enum": [
+            "hook",
+            "pressure",
+            "tracking"
+          ]
+        },
+        "dimensions": {
+          "enum": [
+            0,
+            1,
+            2
+          ]
+        },
+        "parameters": {
+          "$ref": "#/$defs/Parameters"
+        },
+        "capture": {
+          "$ref": "#/$defs/Capture"
+        },
+        "hookBonus": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 600,
+          "default": 0
+        },
+        "pattern": {
+          "type": "array",
+          "maxItems": 16,
+          "items": {
+            "$ref": "#/$defs/Segment"
+          },
+          "default": []
+        },
+        "nibbles": {
+          "$ref": "#/$defs/Nibbles",
+          "default": {
+            "count": 0,
+            "duration": 0.25,
+            "gap": 0.6
+          }
+        },
+        "maxTicks": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 36000,
+          "default": 3600
+        },
+        "timing": {
+          "enum": [
+            "classic",
+            "configured"
+          ],
+          "default": "classic"
+        }
+      },
+      "required": [
+        "mode",
+        "dimensions",
+        "capture"
+      ]
+    },
+    "Motion": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "fishPosition": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "fishTarget": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "tacklePosition": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "fishX": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "fishTargetX": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "tackleX": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "fishVelocity": {
+          "type": "number",
+          "minimum": -600,
+          "maximum": 600
+        },
+        "fishVelocityX": {
+          "type": "number",
+          "minimum": -600,
+          "maximum": 600
+        },
+        "tackleVelocity": {
+          "type": "number",
+          "minimum": -60,
+          "maximum": 60
+        },
+        "tackleVelocityX": {
+          "type": "number",
+          "minimum": -60,
+          "maximum": 60
+        },
+        "steer": {
+          "type": "number",
+          "minimum": -1,
+          "maximum": 1
+        }
+      },
+      "required": [
+        "fishPosition",
+        "fishTarget",
+        "tacklePosition",
+        "fishX",
+        "fishTargetX",
+        "tackleX",
+        "fishVelocity",
+        "fishVelocityX",
+        "tackleVelocity",
+        "tackleVelocityX",
+        "steer"
+      ]
+    },
+    "State": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "version": {
+          "const": 2
+        },
+        "mode": {
+          "enum": [
+            "hook",
+            "pressure",
+            "tracking"
+          ]
+        },
+        "dimensions": {
+          "enum": [
+            0,
+            1,
+            2
+          ]
+        },
+        "phase": {
+          "enum": [
+            "ready",
+            "waiting",
+            "nibble",
+            "bite",
+            "struggle",
+            "caught",
+            "escaped"
+          ]
+        },
+        "behavior": {
+          "enum": [
+            "rest",
+            "warning",
+            "surge"
+          ]
+        },
+        "reason": {
+          "enum": [
+            null,
+            "missed_bite",
+            "line_broke",
+            "got_away",
+            "landed",
+            "timeout",
+            "early_hook"
+          ]
+        },
+        "motion": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/Motion"
+            }
+          ]
+        },
+        "rng": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295
+        },
+        "tick": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 36000
+        },
+        "phaseTicks": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 36000
+        },
+        "duration": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 36000
+        },
+        "behaviorTicks": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 36000
+        },
+        "behaviorDuration": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 36000
+        },
+        "progress": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "tension": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "energy": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "primary": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "segmentIndex": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 15,
+          "default": 0
+        },
+        "nibblesLeft": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 8,
+          "default": 0
+        }
+      },
+      "required": [
+        "version",
+        "mode",
+        "dimensions",
+        "phase",
+        "behavior",
+        "reason",
+        "motion",
+        "rng",
+        "tick",
+        "phaseTicks",
+        "duration",
+        "behaviorTicks",
+        "behaviorDuration",
+        "progress",
+        "tension",
+        "energy",
+        "primary"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "mode": {
+                "const": "tracking"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "motion": {
+                "$ref": "#/$defs/Motion"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "motion": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "Input": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "primary": {
+          "type": "number",
+          "default": 0
+        },
+        "steer": {
+          "type": "number",
+          "default": 0
+        }
+      },
+      "required": []
+    },
+    "Transition": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "state": {
+          "$ref": "#/$defs/State"
+        },
+        "events": {
+          "type": "array",
+          "maxItems": 2,
+          "items": {
+            "enum": [
+              "cast",
+              "bite",
+              "nibble",
+              "hooked",
+              "rest",
+              "warning",
+              "surge",
+              "caught",
+              "escaped"
+            ]
+          }
+        }
+      },
+      "required": [
+        "state",
+        "events"
+      ]
+    },
+    "Fish": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "strength": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "fishSpeed": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 60
+        },
+        "surge": {
+          "type": "number",
+          "minimum": 0.016666666666666666,
+          "maximum": 600
+        },
+        "rest": {
+          "type": "number",
+          "minimum": 0.016666666666666666,
+          "maximum": 600
+        },
+        "fatigue": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 60
+        },
+        "recovery": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 60
+        },
+        "biteWindow": {
+          "type": "number",
+          "minimum": 0.016666666666666666,
+          "maximum": 600
+        },
+        "targetCenter": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "targetSpread": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "restWander": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "preference": {
+          "type": "string",
+          "maxLength": 64
+        },
+        "pondWeight": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 10
+        },
+        "pattern": {
+          "type": "array",
+          "maxItems": 16,
+          "items": {
+            "$ref": "#/$defs/Segment"
+          },
+          "default": []
+        }
+      },
+      "required": [
+        "strength",
+        "fishSpeed",
+        "surge",
+        "rest",
+        "fatigue",
+        "recovery",
+        "biteWindow",
+        "targetCenter",
+        "targetSpread",
+        "restWander",
+        "preference",
+        "pondWeight"
+      ]
+    },
+    "Rod": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "windowSize": {
+          "type": "number",
+          "minimum": 0.001,
+          "maximum": 1
+        },
+        "reelRate": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 60
+        },
+        "lineCapacity": {
+          "type": "number",
+          "minimum": 0.01,
+          "maximum": 100
+        },
+        "tackleAcceleration": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 3600
+        },
+        "tackleDamping": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 60
+        },
+        "tackleSpeed": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 60
+        }
+      },
+      "required": [
+        "windowSize",
+        "reelRate",
+        "lineCapacity",
+        "tackleAcceleration",
+        "tackleDamping",
+        "tackleSpeed"
+      ]
+    },
+    "Bait": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "attraction": {
+          "type": "number",
+          "minimum": 0.5,
+          "maximum": 2.5
+        },
+        "biteBonus": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 0.5
+        },
+        "affinity": {
+          "type": "object",
+          "maxProperties": 64,
+          "propertyNames": {
+            "maxLength": 64
+          },
+          "additionalProperties": {
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "maximum": 5
+          }
+        }
+      },
+      "required": [
+        "attraction",
+        "biteBonus",
+        "affinity"
+      ]
+    },
+    "Loadout": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "fish": {
+          "$ref": "#/$defs/Fish"
+        },
+        "rod": {
+          "$ref": "#/$defs/Rod"
+        },
+        "bait": {
+          "$ref": "#/$defs/Bait"
+        }
+      },
+      "required": [
+        "fish",
+        "rod",
+        "bait"
+      ]
+    },
+    "Encounter": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "version": {
+          "const": 2
+        },
+        "config": {
+          "$ref": "#/$defs/Config"
+        },
+        "seed": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295
+        },
+        "notes": {
+          "type": "array",
+          "maxItems": 3,
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "version",
+        "config",
+        "seed",
+        "notes"
+      ]
+    },
+    "Selection": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "index": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 63
+        },
+        "seed": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295
+        },
+        "odds": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 64,
+          "items": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        }
+      },
+      "required": [
+        "index",
+        "seed",
+        "odds"
+      ]
+    },
+    "Observation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "alignment": {
+          "type": "number"
+        },
+        "pull": {
+          "type": "number"
+        },
+        "targetTension": {
+          "type": "number"
+        },
+        "progressRate": {
+          "type": "number"
+        },
+        "tensionRate": {
+          "type": "number"
+        },
+        "energyRate": {
+          "type": "number"
+        },
+        "alignmentX": {
+          "type": "number"
+        },
+        "alignmentY": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "alignment",
+        "pull",
+        "targetTension",
+        "progressRate",
+        "tensionRate",
+        "energyRate",
+        "alignmentX",
+        "alignmentY"
+      ]
+    },
+    "TargetRule": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "const": "keep"
+            }
+          },
+          "required": [
+            "kind"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "const": "hold"
+            }
+          },
+          "required": [
+            "kind"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "const": "opposite"
+            }
+          },
+          "required": [
+            "kind"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "const": "wander"
+            },
+            "distance": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "required": [
+            "kind",
+            "distance"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "const": "point"
+            },
+            "point": {
+              "$ref": "#/$defs/Point"
+            }
+          },
+          "required": [
+            "kind",
+            "point"
+          ]
+        }
+      ]
+    },
+    "Segment": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "behavior": {
+          "enum": [
+            "rest",
+            "warning",
+            "surge"
+          ],
+          "default": "rest"
+        },
+        "intensity": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "default": 0.15
+        },
+        "pace": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10,
+          "default": 0.65
+        },
+        "duration": {
+          "type": "number",
+          "minimum": 0.016666666666666666,
+          "maximum": 600,
+          "default": 1.2
+        },
+        "jitter": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 0
+        },
+        "target": {
+          "$ref": "#/$defs/TargetRule",
+          "default": {
+            "kind": "keep"
+          }
+        }
+      },
+      "required": []
+    },
+    "Nibbles": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 8,
+          "default": 0
+        },
+        "duration": {
+          "type": "number",
+          "minimum": 0.016666666666666666,
+          "maximum": 600,
+          "default": 0.25
+        },
+        "gap": {
+          "type": "number",
+          "minimum": 0.016666666666666666,
+          "maximum": 600,
+          "default": 0.6
+        }
+      },
+      "required": []
+    }
+  }
+}

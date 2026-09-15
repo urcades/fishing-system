@@ -1,0 +1,20 @@
+// Generated from protocol/fishing.schema.json. Do not edit by hand.
+export type Parameters = { "strength"?: number; "surge"?: number; "rest"?: number; "fatigue"?: number; "reelRate"?: number; "escapeRate"?: number; "baseTension"?: number; "response"?: number; "recovery"?: number; "warning"?: number; "biteWindow"?: number; "jitter"?: number; "fishSpeed"?: number; "windowSize"?: number; "lineCapacity"?: number; "tackleAcceleration"?: number; "tackleDamping"?: number; "tackleSpeed"?: number; "waitMin"?: number; "waitMax"?: number; "targetCenter"?: number; "targetSpread"?: number; "restWander"?: number };
+export type Point = [number, number];
+export type Capture = { "kind": "rectangle" } | { "kind": "polygon"; "rings": Array<Array<Point>> };
+export type Config = { "mode": "hook" | "pressure" | "tracking"; "dimensions": 0 | 1 | 2; "parameters"?: Parameters; "capture": Capture; "pattern"?: Array<Segment>; "nibbles"?: Nibbles; "maxTicks"?: number };
+export type Definition = { "mode": "hook" | "pressure" | "tracking"; "dimensions": 0 | 1 | 2; "parameters"?: Parameters; "capture": Capture; "hookBonus"?: number; "pattern"?: Array<Segment>; "nibbles"?: Nibbles; "maxTicks"?: number; "timing"?: "classic" | "configured" };
+export type Motion = { "fishPosition": number; "fishTarget": number; "tacklePosition": number; "fishX": number; "fishTargetX": number; "tackleX": number; "fishVelocity": number; "fishVelocityX": number; "tackleVelocity": number; "tackleVelocityX": number; "steer": number };
+export type State = { "version": 2; "mode": "hook" | "pressure" | "tracking"; "dimensions": 0 | 1 | 2; "phase": "ready" | "waiting" | "nibble" | "bite" | "struggle" | "caught" | "escaped"; "behavior": "rest" | "warning" | "surge"; "reason": null | "missed_bite" | "line_broke" | "got_away" | "landed" | "timeout" | "early_hook"; "motion": null | Motion; "rng": number; "tick": number; "phaseTicks": number; "duration": number; "behaviorTicks": number; "behaviorDuration": number; "progress": number; "tension": number; "energy": number; "primary": number; "segmentIndex"?: number; "nibblesLeft"?: number };
+export type Input = { "primary"?: number; "steer"?: number };
+export type Transition = { "state": State; "events": Array<"cast" | "bite" | "nibble" | "hooked" | "rest" | "warning" | "surge" | "caught" | "escaped"> };
+export type Fish = { "strength": number; "fishSpeed": number; "surge": number; "rest": number; "fatigue": number; "recovery": number; "biteWindow": number; "targetCenter": number; "targetSpread": number; "restWander": number; "preference": string; "pondWeight": number; "pattern"?: Array<Segment> };
+export type Rod = { "windowSize": number; "reelRate": number; "lineCapacity": number; "tackleAcceleration": number; "tackleDamping": number; "tackleSpeed": number };
+export type Bait = { "attraction": number; "biteBonus": number; "affinity": Record<string, number> };
+export type Loadout = { "fish": Fish; "rod": Rod; "bait": Bait };
+export type Encounter = { "version": 2; "config": Config; "seed": number; "notes": Array<string> };
+export type Selection = { "index": number; "seed": number; "odds": Array<number> };
+export type Observation = { "alignment": number; "pull": number; "targetTension": number; "progressRate": number; "tensionRate": number; "energyRate": number; "alignmentX": number; "alignmentY": number };
+export type TargetRule = { "kind": "keep" } | { "kind": "hold" } | { "kind": "opposite" } | { "kind": "wander"; "distance": number } | { "kind": "point"; "point": Point };
+export type Segment = { "behavior"?: "rest" | "warning" | "surge"; "intensity"?: number; "pace"?: number; "duration"?: number; "jitter"?: number; "target"?: TargetRule };
+export type Nibbles = { "count"?: number; "duration"?: number; "gap"?: number };

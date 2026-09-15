@@ -1,0 +1,309 @@
+{
+  "schema": 2,
+  "provenance": "Hand-derived lifecycle, segment-entry and LCG checkpoints; not generated from simulation output. Numeric full-trajectory agreement is additionally checked between independent Python and Rust/WASM.",
+  "cases": [
+    {
+      "id": "two-nibbles-then-catch",
+      "config": {
+        "mode": "hook",
+        "dimensions": 0,
+        "capture": {
+          "kind": "rectangle"
+        },
+        "parameters": {
+          "waitMin": 0.016666666666666666,
+          "waitMax": 0.016666666666666666
+        },
+        "nibbles": {
+          "count": 2,
+          "duration": 0.05,
+          "gap": 0.016666666666666666
+        }
+      },
+      "seed": 42,
+      "inputs": [
+        {
+          "primary": 1
+        },
+        {
+          "primary": 0
+        },
+        {
+          "primary": 0
+        },
+        {
+          "primary": 0
+        },
+        {
+          "primary": 0
+        },
+        {
+          "primary": 0
+        },
+        {
+          "primary": 0
+        },
+        {
+          "primary": 0
+        },
+        {
+          "primary": 0
+        },
+        {
+          "primary": 0
+        },
+        {
+          "primary": 1
+        }
+      ],
+      "checks": [
+        {
+          "tick": 1,
+          "state": {
+            "phase": "waiting",
+            "rng": 1083814273
+          },
+          "events": [
+            "cast"
+          ]
+        },
+        {
+          "tick": 2,
+          "state": {
+            "phase": "nibble",
+            "nibblesLeft": 1
+          },
+          "events": [
+            "nibble"
+          ]
+        },
+        {
+          "tick": 5,
+          "state": {
+            "phase": "waiting"
+          },
+          "events": []
+        },
+        {
+          "tick": 6,
+          "state": {
+            "phase": "nibble",
+            "nibblesLeft": 0
+          },
+          "events": [
+            "nibble"
+          ]
+        },
+        {
+          "tick": 10,
+          "state": {
+            "phase": "bite"
+          },
+          "events": [
+            "bite"
+          ]
+        },
+        {
+          "tick": 11,
+          "state": {
+            "phase": "caught",
+            "reason": "landed",
+            "rng": 1083814273
+          },
+          "events": [
+            "hooked",
+            "caught"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "early-hook",
+      "config": {
+        "mode": "hook",
+        "dimensions": 0,
+        "capture": {
+          "kind": "rectangle"
+        },
+        "parameters": {
+          "waitMin": 0.016666666666666666,
+          "waitMax": 0.016666666666666666
+        },
+        "nibbles": {
+          "count": 2,
+          "duration": 0.05,
+          "gap": 0.016666666666666666
+        }
+      },
+      "seed": 42,
+      "inputs": [
+        {
+          "primary": 1
+        },
+        {
+          "primary": 0
+        },
+        {
+          "primary": 1
+        }
+      ],
+      "checks": [
+        {
+          "tick": 3,
+          "state": {
+            "phase": "escaped",
+            "reason": "early_hook"
+          },
+          "events": [
+            "escaped"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "custom-timeout",
+      "config": {
+        "mode": "pressure",
+        "dimensions": 0,
+        "capture": {
+          "kind": "rectangle"
+        },
+        "maxTicks": 2
+      },
+      "seed": 42,
+      "inputs": [
+        {
+          "primary": 1
+        },
+        {
+          "primary": 0
+        }
+      ],
+      "checks": [
+        {
+          "tick": 2,
+          "state": {
+            "phase": "escaped",
+            "reason": "timeout"
+          },
+          "events": [
+            "escaped"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "double-surge-targets",
+      "config": {
+        "mode": "tracking",
+        "dimensions": 2,
+        "capture": {
+          "kind": "rectangle"
+        },
+        "parameters": {
+          "waitMin": 0.016666666666666666,
+          "waitMax": 0.016666666666666666
+        },
+        "pattern": [
+          {
+            "behavior": "surge",
+            "intensity": 0.2,
+            "pace": 0.5,
+            "duration": 0.016666666666666666,
+            "target": {
+              "kind": "point",
+              "point": [
+                0.2,
+                0.8
+              ]
+            }
+          },
+          {
+            "behavior": "surge",
+            "intensity": 1.5,
+            "pace": 2,
+            "duration": 0.03333333333333333,
+            "target": {
+              "kind": "point",
+              "point": [
+                0.8,
+                0.2
+              ]
+            }
+          }
+        ]
+      },
+      "seed": 42,
+      "inputs": [
+        {
+          "primary": 1
+        },
+        {
+          "primary": 0
+        },
+        {
+          "primary": 1
+        },
+        {
+          "primary": 0
+        },
+        {
+          "primary": 0
+        },
+        {
+          "primary": 0
+        }
+      ],
+      "checks": [
+        {
+          "tick": 3,
+          "state": {
+            "phase": "struggle",
+            "segmentIndex": 0,
+            "rng": 378494188,
+            "motion": {
+              "fishTarget": 0.8,
+              "fishTargetX": 0.2
+            }
+          },
+          "events": [
+            "hooked",
+            "surge"
+          ]
+        },
+        {
+          "tick": 4,
+          "state": {
+            "segmentIndex": 1,
+            "rng": 2479403867,
+            "motion": {
+              "fishTarget": 0.2,
+              "fishTargetX": 0.8
+            }
+          },
+          "events": [
+            "surge"
+          ]
+        },
+        {
+          "tick": 5,
+          "state": {
+            "segmentIndex": 1,
+            "rng": 2479403867
+          },
+          "events": []
+        },
+        {
+          "tick": 6,
+          "state": {
+            "segmentIndex": 0,
+            "rng": 955863294
+          },
+          "events": [
+            "surge"
+          ]
+        }
+      ]
+    }
+  ]
+}

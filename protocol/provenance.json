@@ -1,0 +1,13 @@
+{
+  "origin": "Accepted JavaScript playground before Rust extraction",
+  "captured": "2026-09-14",
+  "sourceSnapshot": "Historical JavaScript source snapshot; hashes below, implementation not included in this repository",
+  "sha256": {
+    "geometry.mjs": "273303174f22564ce877f1238d335d6750a524c1c803ae617f0110758ffc2a79",
+    "protocol.mjs": "3a379d64e37bbb9d1e430c100f6d3646215a5ecb6f165db48ec19318f88ac4c8",
+    "engine.mjs": "070164bcbe69228ec55891af1e0a1ce5e5fdf893039273270810f0ad7ea3e1bd",
+    "app.mjs": "7c71b643a199ce2d30c42f7f4d9b52c67e8939101bf34fb7ab291aa932aeb352",
+    "loadout.mjs": "d379043e548b3b4636d143a04aa8e4df659299f268faebb7fb7770ae488b6582"
+  },
+  "expectedResults": "Captured before changing the implementation; fixture checks never regenerate expected results"
+}

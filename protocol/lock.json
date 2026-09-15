@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 2,
+  "rustCrate": "fishing",
+  "rustVersion": "0.2.0",
+  "files": [
+    {
+      "file": "PROTOCOL.md",
+      "repository": "urcades/fishing",
+      "commit": "abed0667f56901c4a5668eb1c4f3f36266486a57",
+      "path": "spec/PROTOCOL.md",
+      "sha256": "5213ccf9c168478bbb40383aaf07c29d73c8cb8383a41bff66ddcf1f6150571b"
+    },
+    {
+      "file": "fishing.schema.json",
+      "repository": "urcades/fishing-examples",
+      "commit": "ac721be31fd2b2461379ed9ede9cb7716aa330e3",
+      "path": "spec/fishing.schema.json",
+      "sha256": "788d81721d29395af5dbc82f8e20d92100e4635a3d3b9bdb7ef4d46705b021dc"
+    },
+    {
+      "file": "parameters.json",
+      "repository": "urcades/fishing-examples",
+      "commit": "ac721be31fd2b2461379ed9ede9cb7716aa330e3",
+      "path": "spec/parameters.json",
+      "sha256": "c133de6f968b000fee48091560d1c74d6912ad901ee89d42fe86d14af183b261"
+    },
+    {
+      "file": "trajectories.json",
+      "repository": "urcades/fishing-examples",
+      "commit": "ac721be31fd2b2461379ed9ede9cb7716aa330e3",
+      "path": "conformance/fixtures/trajectories.json",
+      "sha256": "b0f6ab9a2f4856ee01cd6f9ebc09c7236f86a38b306732bb932bc207894a2a0a"
+    },
+    {
+      "file": "geometry.json",
+      "repository": "urcades/fishing-examples",
+      "commit": "ac721be31fd2b2461379ed9ede9cb7716aa330e3",
+      "path": "conformance/fixtures/geometry.json",
+      "sha256": "3199a189177168b924adcdbcb55f45604b497a51567a0073a55489de59a6a5bf"
+    },
+    {
+      "file": "resolution.json",
+      "repository": "urcades/fishing-examples",
+      "commit": "ac721be31fd2b2461379ed9ede9cb7716aa330e3",
+      "path": "conformance/fixtures/resolution.json",
+      "sha256": "0f4baeae6aabf78aa1aea1b76f02e8cc2db07d7dff140beaeca403b5766b3b9e"
+    },
+    {
+      "file": "invalid.json",
+      "repository": "urcades/fishing-examples",
+      "commit": "ac721be31fd2b2461379ed9ede9cb7716aa330e3",
+      "path": "conformance/fixtures/invalid.json",
+      "sha256": "167ac136d0e49176f1440977ad77dcaaba4bd2ada1b0de24054af34f5aecd8df"
+    },
+    {
+      "file": "extensions.json",
+      "repository": "urcades/fishing-examples",
+      "commit": "ac721be31fd2b2461379ed9ede9cb7716aa330e3",
+      "path": "conformance/fixtures/extensions.json",
+      "sha256": "e8aaaed2c283a60c43fb89151d5f8849aef6321cf4b5fdd0eb4e12fd1ebc00a9"
+    },
+    {
+      "file": "provenance.json",
+      "repository": "urcades/fishing-examples",
+      "commit": "ac721be31fd2b2461379ed9ede9cb7716aa330e3",
+      "path": "conformance/fixtures/provenance.json",
+      "sha256": "65fda6e3c3fd92c1ed1a66a336d375e34b75ba6d2d5860aeb3c2f3d758b2fc1e"
+    }
+  ]
+}

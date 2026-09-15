@@ -1,0 +1,868 @@
+[
+  {
+    "id": "wrong-dimensions",
+    "op": "config",
+    "config": {
+      "mode": "tracking",
+      "dimensions": 3,
+      "parameters": {
+        "strength": 1,
+        "surge": 1.8,
+        "rest": 1.2,
+        "fatigue": 0.1,
+        "reelRate": 0.08,
+        "escapeRate": 0.08,
+        "baseTension": 0.3,
+        "response": 0.8,
+        "recovery": 0.2,
+        "warning": 0.5,
+        "biteWindow": 1.1,
+        "jitter": 0.15,
+        "fishSpeed": 0.34,
+        "windowSize": 0.28,
+        "lineCapacity": 1,
+        "tackleAcceleration": 3.2,
+        "tackleDamping": 3.8,
+        "tackleSpeed": 0.9,
+        "waitMin": 1.5,
+        "waitMax": 3,
+        "targetCenter": 0.5,
+        "targetSpread": 1,
+        "restWander": 0.16
+      },
+      "capture": {
+        "kind": "rectangle"
+      }
+    }
+  },
+  {
+    "id": "unknown-parameter",
+    "op": "config",
+    "config": {
+      "mode": "tracking",
+      "dimensions": 1,
+      "parameters": {
+        "strength": 1,
+        "surge": 1.8,
+        "rest": 1.2,
+        "fatigue": 0.1,
+        "reelRate": 0.08,
+        "escapeRate": 0.08,
+        "baseTension": 0.3,
+        "response": 0.8,
+        "recovery": 0.2,
+        "warning": 0.5,
+        "biteWindow": 1.1,
+        "jitter": 0.15,
+        "fishSpeed": 0.34,
+        "windowSize": 0.28,
+        "lineCapacity": 1,
+        "tackleAcceleration": 3.2,
+        "tackleDamping": 3.8,
+        "tackleSpeed": 0.9,
+        "waitMin": 1.5,
+        "waitMax": 3,
+        "targetCenter": 0.5,
+        "targetSpread": 1,
+        "restWander": 0.16,
+        "hiddenBuff": 10
+      },
+      "capture": {
+        "kind": "rectangle"
+      }
+    }
+  },
+  {
+    "id": "nonfinite-null",
+    "op": "config",
+    "config": {
+      "mode": "tracking",
+      "dimensions": 1,
+      "parameters": {
+        "strength": null,
+        "surge": 1.8,
+        "rest": 1.2,
+        "fatigue": 0.1,
+        "reelRate": 0.08,
+        "escapeRate": 0.08,
+        "baseTension": 0.3,
+        "response": 0.8,
+        "recovery": 0.2,
+        "warning": 0.5,
+        "biteWindow": 1.1,
+        "jitter": 0.15,
+        "fishSpeed": 0.34,
+        "windowSize": 0.28,
+        "lineCapacity": 1,
+        "tackleAcceleration": 3.2,
+        "tackleDamping": 3.8,
+        "tackleSpeed": 0.9,
+        "waitMin": 1.5,
+        "waitMax": 3,
+        "targetCenter": 0.5,
+        "targetSpread": 1,
+        "restWander": 0.16
+      },
+      "capture": {
+        "kind": "rectangle"
+      }
+    }
+  },
+  {
+    "id": "wait-order",
+    "op": "config",
+    "config": {
+      "mode": "tracking",
+      "dimensions": 1,
+      "parameters": {
+        "strength": 1,
+        "surge": 1.8,
+        "rest": 1.2,
+        "fatigue": 0.1,
+        "reelRate": 0.08,
+        "escapeRate": 0.08,
+        "baseTension": 0.3,
+        "response": 0.8,
+        "recovery": 0.2,
+        "warning": 0.5,
+        "biteWindow": 1.1,
+        "jitter": 0.15,
+        "fishSpeed": 0.34,
+        "windowSize": 0.28,
+        "lineCapacity": 1,
+        "tackleAcceleration": 3.2,
+        "tackleDamping": 3.8,
+        "tackleSpeed": 0.9,
+        "waitMin": 5,
+        "waitMax": 1,
+        "targetCenter": 0.5,
+        "targetSpread": 1,
+        "restWander": 0.16
+      },
+      "capture": {
+        "kind": "rectangle"
+      }
+    }
+  },
+  {
+    "id": "nonspatial-polygon",
+    "op": "config",
+    "config": {
+      "mode": "hook",
+      "dimensions": 0,
+      "parameters": {
+        "strength": 1,
+        "surge": 1.8,
+        "rest": 1.2,
+        "fatigue": 0.1,
+        "reelRate": 0.08,
+        "escapeRate": 0.08,
+        "baseTension": 0.3,
+        "response": 0.8,
+        "recovery": 0.2,
+        "warning": 0.5,
+        "biteWindow": 1.1,
+        "jitter": 0.15,
+        "fishSpeed": 0.34,
+        "windowSize": 0.28,
+        "lineCapacity": 1,
+        "tackleAcceleration": 3.2,
+        "tackleDamping": 3.8,
+        "tackleSpeed": 0.9,
+        "waitMin": 1.5,
+        "waitMax": 3,
+        "targetCenter": 0.5,
+        "targetSpread": 1,
+        "restWander": 0.16
+      },
+      "capture": {
+        "kind": "polygon",
+        "rings": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              0.5,
+              1
+            ]
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "id": "self-intersection",
+    "op": "config",
+    "config": {
+      "mode": "tracking",
+      "dimensions": 2,
+      "parameters": {
+        "strength": 1,
+        "surge": 1.8,
+        "rest": 1.2,
+        "fatigue": 0.1,
+        "reelRate": 0.08,
+        "escapeRate": 0.08,
+        "baseTension": 0.3,
+        "response": 0.8,
+        "recovery": 0.2,
+        "warning": 0.5,
+        "biteWindow": 1.1,
+        "jitter": 0.15,
+        "fishSpeed": 0.34,
+        "windowSize": 0.28,
+        "lineCapacity": 1,
+        "tackleAcceleration": 3.2,
+        "tackleDamping": 3.8,
+        "tackleSpeed": 0.9,
+        "waitMin": 1.5,
+        "waitMax": 3,
+        "targetCenter": 0.5,
+        "targetSpread": 1,
+        "restWander": 0.16
+      },
+      "capture": {
+        "kind": "polygon",
+        "rings": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "id": "hole-outside",
+    "op": "config",
+    "config": {
+      "mode": "tracking",
+      "dimensions": 2,
+      "parameters": {
+        "strength": 1,
+        "surge": 1.8,
+        "rest": 1.2,
+        "fatigue": 0.1,
+        "reelRate": 0.08,
+        "escapeRate": 0.08,
+        "baseTension": 0.3,
+        "response": 0.8,
+        "recovery": 0.2,
+        "warning": 0.5,
+        "biteWindow": 1.1,
+        "jitter": 0.15,
+        "fishSpeed": 0.34,
+        "windowSize": 0.28,
+        "lineCapacity": 1,
+        "tackleAcceleration": 3.2,
+        "tackleDamping": 3.8,
+        "tackleSpeed": 0.9,
+        "waitMin": 1.5,
+        "waitMax": 3,
+        "targetCenter": 0.5,
+        "targetSpread": 1,
+        "restWander": 0.16
+      },
+      "capture": {
+        "kind": "polygon",
+        "rings": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              0.5,
+              0
+            ],
+            [
+              0.5,
+              0.5
+            ],
+            [
+              0,
+              0.5
+            ]
+          ],
+          [
+            [
+              0.7,
+              0.7
+            ],
+            [
+              0.9,
+              0.7
+            ],
+            [
+              0.9,
+              0.9
+            ],
+            [
+              0.7,
+              0.9
+            ]
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "id": "resource-bound",
+    "op": "step",
+    "config": {
+      "mode": "tracking",
+      "dimensions": 1,
+      "parameters": {
+        "strength": 1,
+        "surge": 1.8,
+        "rest": 1.2,
+        "fatigue": 0.1,
+        "reelRate": 0.08,
+        "escapeRate": 0.08,
+        "baseTension": 0.3,
+        "response": 0.8,
+        "recovery": 0.2,
+        "warning": 0.5,
+        "biteWindow": 1.1,
+        "jitter": 0.15,
+        "fishSpeed": 0.34,
+        "windowSize": 0.28,
+        "lineCapacity": 1,
+        "tackleAcceleration": 3.2,
+        "tackleDamping": 3.8,
+        "tackleSpeed": 0.9,
+        "waitMin": 1.5,
+        "waitMax": 3,
+        "targetCenter": 0.5,
+        "targetSpread": 1,
+        "restWander": 0.16
+      },
+      "capture": {
+        "kind": "rectangle"
+      }
+    },
+    "state": {
+      "version": 1,
+      "mode": "tracking",
+      "dimensions": 1,
+      "tick": 0,
+      "phase": "ready",
+      "phaseTicks": 0,
+      "duration": 0,
+      "behavior": "rest",
+      "behaviorTicks": 0,
+      "behaviorDuration": 0,
+      "progress": 1.1,
+      "tension": 0,
+      "energy": 1,
+      "rng": 42,
+      "reason": null,
+      "primary": 0,
+      "motion": {
+        "fishPosition": 0.5,
+        "fishVelocity": 0,
+        "fishTarget": 0.5,
+        "tacklePosition": 0.5,
+        "tackleVelocity": 0,
+        "fishX": 0.5,
+        "fishVelocityX": 0,
+        "fishTargetX": 0.5,
+        "tackleX": 0.5,
+        "tackleVelocityX": 0,
+        "steer": 0
+      }
+    },
+    "input": {
+      "primary": 1
+    }
+  },
+  {
+    "id": "elapsed-timer",
+    "op": "step",
+    "config": {
+      "mode": "tracking",
+      "dimensions": 1,
+      "parameters": {
+        "strength": 1,
+        "surge": 1.8,
+        "rest": 1.2,
+        "fatigue": 0.1,
+        "reelRate": 0.08,
+        "escapeRate": 0.08,
+        "baseTension": 0.3,
+        "response": 0.8,
+        "recovery": 0.2,
+        "warning": 0.5,
+        "biteWindow": 1.1,
+        "jitter": 0.15,
+        "fishSpeed": 0.34,
+        "windowSize": 0.28,
+        "lineCapacity": 1,
+        "tackleAcceleration": 3.2,
+        "tackleDamping": 3.8,
+        "tackleSpeed": 0.9,
+        "waitMin": 1.5,
+        "waitMax": 3,
+        "targetCenter": 0.5,
+        "targetSpread": 1,
+        "restWander": 0.16
+      },
+      "capture": {
+        "kind": "rectangle"
+      }
+    },
+    "state": {
+      "version": 1,
+      "mode": "tracking",
+      "dimensions": 1,
+      "tick": 0,
+      "phase": "ready",
+      "phaseTicks": 3600,
+      "duration": 0,
+      "behavior": "rest",
+      "behaviorTicks": 0,
+      "behaviorDuration": 0,
+      "progress": 0.25,
+      "tension": 0,
+      "energy": 1,
+      "rng": 42,
+      "reason": null,
+      "primary": 0,
+      "motion": {
+        "fishPosition": 0.5,
+        "fishVelocity": 0,
+        "fishTarget": 0.5,
+        "tacklePosition": 0.5,
+        "tackleVelocity": 0,
+        "fishX": 0.5,
+        "fishVelocityX": 0,
+        "fishTargetX": 0.5,
+        "tackleX": 0.5,
+        "tackleVelocityX": 0,
+        "steer": 0
+      }
+    },
+    "input": {
+      "primary": 1
+    }
+  },
+  {
+    "id": "unknown-state-member",
+    "op": "step",
+    "config": {
+      "mode": "tracking",
+      "dimensions": 1,
+      "parameters": {
+        "strength": 1,
+        "surge": 1.8,
+        "rest": 1.2,
+        "fatigue": 0.1,
+        "reelRate": 0.08,
+        "escapeRate": 0.08,
+        "baseTension": 0.3,
+        "response": 0.8,
+        "recovery": 0.2,
+        "warning": 0.5,
+        "biteWindow": 1.1,
+        "jitter": 0.15,
+        "fishSpeed": 0.34,
+        "windowSize": 0.28,
+        "lineCapacity": 1,
+        "tackleAcceleration": 3.2,
+        "tackleDamping": 3.8,
+        "tackleSpeed": 0.9,
+        "waitMin": 1.5,
+        "waitMax": 3,
+        "targetCenter": 0.5,
+        "targetSpread": 1,
+        "restWander": 0.16
+      },
+      "capture": {
+        "kind": "rectangle"
+      }
+    },
+    "state": {
+      "version": 1,
+      "mode": "tracking",
+      "dimensions": 1,
+      "tick": 0,
+      "phase": "ready",
+      "phaseTicks": 0,
+      "duration": 0,
+      "behavior": "rest",
+      "behaviorTicks": 0,
+      "behaviorDuration": 0,
+      "progress": 0.25,
+      "tension": 0,
+      "energy": 1,
+      "rng": 42,
+      "reason": null,
+      "primary": 0,
+      "motion": {
+        "fishPosition": 0.5,
+        "fishVelocity": 0,
+        "fishTarget": 0.5,
+        "tacklePosition": 0.5,
+        "tackleVelocity": 0,
+        "fishX": 0.5,
+        "fishVelocityX": 0,
+        "fishTargetX": 0.5,
+        "tackleX": 0.5,
+        "tackleVelocityX": 0,
+        "steer": 0
+      },
+      "secret": 1
+    },
+    "input": {
+      "primary": 1
+    }
+  },
+  {
+    "id": "missing-motion",
+    "op": "step",
+    "config": {
+      "mode": "tracking",
+      "dimensions": 1,
+      "parameters": {
+        "strength": 1,
+        "surge": 1.8,
+        "rest": 1.2,
+        "fatigue": 0.1,
+        "reelRate": 0.08,
+        "escapeRate": 0.08,
+        "baseTension": 0.3,
+        "response": 0.8,
+        "recovery": 0.2,
+        "warning": 0.5,
+        "biteWindow": 1.1,
+        "jitter": 0.15,
+        "fishSpeed": 0.34,
+        "windowSize": 0.28,
+        "lineCapacity": 1,
+        "tackleAcceleration": 3.2,
+        "tackleDamping": 3.8,
+        "tackleSpeed": 0.9,
+        "waitMin": 1.5,
+        "waitMax": 3,
+        "targetCenter": 0.5,
+        "targetSpread": 1,
+        "restWander": 0.16
+      },
+      "capture": {
+        "kind": "rectangle"
+      }
+    },
+    "state": {
+      "version": 1,
+      "mode": "tracking",
+      "dimensions": 1,
+      "tick": 0,
+      "phase": "ready",
+      "phaseTicks": 0,
+      "duration": 0,
+      "behavior": "rest",
+      "behaviorTicks": 0,
+      "behaviorDuration": 0,
+      "progress": 0.25,
+      "tension": 0,
+      "energy": 1,
+      "rng": 42,
+      "reason": null,
+      "primary": 0,
+      "motion": null
+    },
+    "input": {
+      "primary": 1
+    }
+  },
+  {
+    "id": "unsupported-version",
+    "op": "step",
+    "config": {
+      "mode": "tracking",
+      "dimensions": 1,
+      "parameters": {
+        "strength": 1,
+        "surge": 1.8,
+        "rest": 1.2,
+        "fatigue": 0.1,
+        "reelRate": 0.08,
+        "escapeRate": 0.08,
+        "baseTension": 0.3,
+        "response": 0.8,
+        "recovery": 0.2,
+        "warning": 0.5,
+        "biteWindow": 1.1,
+        "jitter": 0.15,
+        "fishSpeed": 0.34,
+        "windowSize": 0.28,
+        "lineCapacity": 1,
+        "tackleAcceleration": 3.2,
+        "tackleDamping": 3.8,
+        "tackleSpeed": 0.9,
+        "waitMin": 1.5,
+        "waitMax": 3,
+        "targetCenter": 0.5,
+        "targetSpread": 1,
+        "restWander": 0.16
+      },
+      "capture": {
+        "kind": "rectangle"
+      }
+    },
+    "state": {
+      "version": 9,
+      "mode": "tracking",
+      "dimensions": 1,
+      "tick": 0,
+      "phase": "ready",
+      "phaseTicks": 0,
+      "duration": 0,
+      "behavior": "rest",
+      "behaviorTicks": 0,
+      "behaviorDuration": 0,
+      "progress": 0.25,
+      "tension": 0,
+      "energy": 1,
+      "rng": 42,
+      "reason": null,
+      "primary": 0,
+      "motion": {
+        "fishPosition": 0.5,
+        "fishVelocity": 0,
+        "fishTarget": 0.5,
+        "tacklePosition": 0.5,
+        "tackleVelocity": 0,
+        "fishX": 0.5,
+        "fishVelocityX": 0,
+        "fishTargetX": 0.5,
+        "tackleX": 0.5,
+        "tackleVelocityX": 0,
+        "steer": 0
+      }
+    },
+    "input": {
+      "primary": 1
+    }
+  },
+  {
+    "id": "unknown-input-member",
+    "op": "step",
+    "config": {
+      "mode": "tracking",
+      "dimensions": 1,
+      "parameters": {
+        "strength": 1,
+        "surge": 1.8,
+        "rest": 1.2,
+        "fatigue": 0.1,
+        "reelRate": 0.08,
+        "escapeRate": 0.08,
+        "baseTension": 0.3,
+        "response": 0.8,
+        "recovery": 0.2,
+        "warning": 0.5,
+        "biteWindow": 1.1,
+        "jitter": 0.15,
+        "fishSpeed": 0.34,
+        "windowSize": 0.28,
+        "lineCapacity": 1,
+        "tackleAcceleration": 3.2,
+        "tackleDamping": 3.8,
+        "tackleSpeed": 0.9,
+        "waitMin": 1.5,
+        "waitMax": 3,
+        "targetCenter": 0.5,
+        "targetSpread": 1,
+        "restWander": 0.16
+      },
+      "capture": {
+        "kind": "rectangle"
+      }
+    },
+    "state": {
+      "version": 1,
+      "mode": "tracking",
+      "dimensions": 1,
+      "tick": 0,
+      "phase": "ready",
+      "phaseTicks": 0,
+      "duration": 0,
+      "behavior": "rest",
+      "behaviorTicks": 0,
+      "behaviorDuration": 0,
+      "progress": 0.25,
+      "tension": 0,
+      "energy": 1,
+      "rng": 42,
+      "reason": null,
+      "primary": 0,
+      "motion": {
+        "fishPosition": 0.5,
+        "fishVelocity": 0,
+        "fishTarget": 0.5,
+        "tacklePosition": 0.5,
+        "tackleVelocity": 0,
+        "fishX": 0.5,
+        "fishVelocityX": 0,
+        "fishTargetX": 0.5,
+        "tackleX": 0.5,
+        "tackleVelocityX": 0,
+        "steer": 0
+      }
+    },
+    "input": {
+      "primary": 1,
+      "hiddenBuff": 1
+    }
+  },
+  {
+    "id": "fractional-seed",
+    "op": "create",
+    "config": {
+      "mode": "tracking",
+      "dimensions": 1,
+      "parameters": {
+        "strength": 1,
+        "surge": 1.8,
+        "rest": 1.2,
+        "fatigue": 0.1,
+        "reelRate": 0.08,
+        "escapeRate": 0.08,
+        "baseTension": 0.3,
+        "response": 0.8,
+        "recovery": 0.2,
+        "warning": 0.5,
+        "biteWindow": 1.1,
+        "jitter": 0.15,
+        "fishSpeed": 0.34,
+        "windowSize": 0.28,
+        "lineCapacity": 1,
+        "tackleAcceleration": 3.2,
+        "tackleDamping": 3.8,
+        "tackleSpeed": 0.9,
+        "waitMin": 1.5,
+        "waitMax": 3,
+        "targetCenter": 0.5,
+        "targetSpread": 1,
+        "restWander": 0.16
+      },
+      "capture": {
+        "kind": "rectangle"
+      }
+    },
+    "seed": 1.5
+  },
+  {
+    "id": "invalid-profile",
+    "op": "resolve",
+    "definition": {
+      "mode": "tracking",
+      "dimensions": 1,
+      "parameters": {},
+      "capture": {
+        "kind": "rectangle"
+      },
+      "hookBonus": 0
+    },
+    "loadout": {
+      "fish": {
+        "strength": 1,
+        "fishSpeed": 0.34,
+        "surge": 1.8,
+        "rest": 1.2,
+        "fatigue": 0.1,
+        "recovery": 0.2,
+        "biteWindow": 1.1,
+        "targetCenter": 0.5,
+        "targetSpread": 1,
+        "restWander": 0.16,
+        "preference": "insect",
+        "pondWeight": 1
+      },
+      "rod": {
+        "windowSize": 0.01,
+        "reelRate": 0.08,
+        "lineCapacity": 1,
+        "tackleAcceleration": 3.2,
+        "tackleDamping": 3.8,
+        "tackleSpeed": 0.9
+      },
+      "bait": {
+        "attraction": 1.15,
+        "biteBonus": 0.15,
+        "affinity": {
+          "insect": 1.8,
+          "grain": 0.7,
+          "flash": 0.8
+        }
+      }
+    },
+    "seed": 42
+  },
+  {
+    "id": "empty-pool",
+    "op": "select",
+    "pool": [],
+    "bait": {
+      "attraction": 1,
+      "biteBonus": 0,
+      "affinity": {
+        "insect": 1,
+        "grain": 1,
+        "flash": 1
+      }
+    },
+    "seed": 0
+  },
+  {
+    "id": "underflowed-selection-weight",
+    "op": "select",
+    "pool": [
+      {
+        "strength": 1,
+        "fishSpeed": 0.34,
+        "surge": 1.8,
+        "rest": 1.2,
+        "fatigue": 0.1,
+        "recovery": 0.2,
+        "biteWindow": 1.1,
+        "targetCenter": 0.5,
+        "targetSpread": 1,
+        "restWander": 0.16,
+        "preference": "insect",
+        "pondWeight": 2.2250738585072014e-308
+      }
+    ],
+    "bait": {
+      "attraction": 1,
+      "biteBonus": 0,
+      "affinity": {
+        "insect": 2.2250738585072014e-308,
+        "grain": 1,
+        "flash": 1
+      }
+    },
+    "seed": 0
+  }
+]

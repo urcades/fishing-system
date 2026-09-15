@@ -1,0 +1,51 @@
+{
+  "name": "fishing-system",
+  "version": "0.2.0",
+  "description": "Pure TypeScript fishing minigames conforming to the fishing Rust protocol",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./authoring": {
+      "types": "./dist/authoring.d.ts",
+      "import": "./dist/authoring.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE-MIT",
+    "LICENSE-APACHE"
+  ],
+  "sideEffects": false,
+  "license": "MIT OR Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/urcades/fishing-system.git"
+  },
+  "scripts": {
+    "generate": "node scripts/generate.mjs",
+    "check:protocol": "node scripts/check-protocol.mjs",
+    "build": "tsc",
+    "test": "npm run check:protocol && npm run build && node --test test/*.test.mjs",
+    "prepublishOnly": "npm test",
+    "test:rust": "npm run build && node scripts/check-rust.mjs"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.3"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "fishing",
+    "gamedev",
+    "state-machine",
+    "deterministic",
+    "typescript"
+  ]
+}

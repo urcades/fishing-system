@@ -1,0 +1,163 @@
+{
+  "strength": {
+    "default": 1,
+    "min": 0,
+    "max": 100,
+    "recommendedMin": 0.4,
+    "recommendedMax": 1.6
+  },
+  "surge": {
+    "default": 1.8,
+    "min": 0.016666666666666666,
+    "max": 600,
+    "recommendedMin": 0.5,
+    "recommendedMax": 3
+  },
+  "rest": {
+    "default": 1.2,
+    "min": 0.016666666666666666,
+    "max": 600,
+    "recommendedMin": 0.4,
+    "recommendedMax": 3
+  },
+  "fatigue": {
+    "default": 0.1,
+    "min": 0,
+    "max": 60,
+    "recommendedMin": 0.03,
+    "recommendedMax": 0.25
+  },
+  "reelRate": {
+    "default": 0.08,
+    "min": 0,
+    "max": 60,
+    "recommendedMin": 0.02,
+    "recommendedMax": 0.2
+  },
+  "escapeRate": {
+    "default": 0.08,
+    "min": 0,
+    "max": 60,
+    "recommendedMin": 0.02,
+    "recommendedMax": 0.2
+  },
+  "baseTension": {
+    "default": 0.3,
+    "min": 0,
+    "max": 100,
+    "recommendedMin": 0.1,
+    "recommendedMax": 0.5
+  },
+  "response": {
+    "default": 0.8,
+    "min": 0.016666666666666666,
+    "max": 600,
+    "recommendedMin": 0.3,
+    "recommendedMax": 2
+  },
+  "recovery": {
+    "default": 0.2,
+    "min": 0,
+    "max": 60,
+    "recommendedMin": 0.05,
+    "recommendedMax": 0.4
+  },
+  "warning": {
+    "default": 0.5,
+    "min": 0.016666666666666666,
+    "max": 600,
+    "recommendedMin": 0.3,
+    "recommendedMax": 1
+  },
+  "biteWindow": {
+    "default": 1.1,
+    "min": 0.016666666666666666,
+    "max": 600,
+    "recommendedMin": 0.5,
+    "recommendedMax": 2
+  },
+  "jitter": {
+    "default": 0.15,
+    "min": 0,
+    "max": 1,
+    "recommendedMin": 0,
+    "recommendedMax": 0.2
+  },
+  "fishSpeed": {
+    "default": 0.34,
+    "min": 0,
+    "max": 60,
+    "recommendedMin": 0.15,
+    "recommendedMax": 0.65
+  },
+  "windowSize": {
+    "default": 0.28,
+    "min": 0.001,
+    "max": 1,
+    "recommendedMin": 0.12,
+    "recommendedMax": 0.45
+  },
+  "lineCapacity": {
+    "default": 1,
+    "min": 0.01,
+    "max": 100,
+    "recommendedMin": 1,
+    "recommendedMax": 2
+  },
+  "tackleAcceleration": {
+    "default": 3.2,
+    "min": 0,
+    "max": 3600,
+    "recommendedMin": 1.8,
+    "recommendedMax": 5
+  },
+  "tackleDamping": {
+    "default": 3.8,
+    "min": 0,
+    "max": 60,
+    "recommendedMin": 2.5,
+    "recommendedMax": 6
+  },
+  "tackleSpeed": {
+    "default": 0.9,
+    "min": 0,
+    "max": 60,
+    "recommendedMin": 0.55,
+    "recommendedMax": 1.1
+  },
+  "waitMin": {
+    "default": 1.5,
+    "min": 0.016666666666666666,
+    "max": 600,
+    "recommendedMin": 0.4,
+    "recommendedMax": 5
+  },
+  "waitMax": {
+    "default": 3,
+    "min": 0.016666666666666666,
+    "max": 600,
+    "recommendedMin": 0.4,
+    "recommendedMax": 8
+  },
+  "targetCenter": {
+    "default": 0.5,
+    "min": 0,
+    "max": 1,
+    "recommendedMin": 0.2,
+    "recommendedMax": 0.8
+  },
+  "targetSpread": {
+    "default": 1,
+    "min": 0,
+    "max": 1,
+    "recommendedMin": 0.2,
+    "recommendedMax": 1
+  },
+  "restWander": {
+    "default": 0.16,
+    "min": 0,
+    "max": 1,
+    "recommendedMin": 0.03,
+    "recommendedMax": 0.3
+  }
+}
